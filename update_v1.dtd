@@ -1,0 +1,29 @@
+<!ELEMENT update (general?, entry+)>
+<!ATTLIST update version CDATA #REQUIRED>
+
+<!ELEMENT general (server*, info*)>
+
+<!ELEMENT entry (file)>
+<!ATTLIST entry type (latest|stable|updater) "latest">
+
+<!ELEMENT server (link)>
+
+<!ELEMENT info (name, link)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT link (#PCDATA)>
+
+<!ELEMENT file (name, url, version, timestamp, hash, link?)>
+
+<!ELEMENT url (#PCDATA)>
+<!ATTLIST url type (jar|zip|gzip)>
+
+<!ELEMENT type (#PCDATA)>
+
+<!ELEMENT version (#PCDATA)>
+
+<!ELEMENT timestamp (#PCDATA)>
+
+<!ELEMENT hash (#PCDATA)>
+<!ATTLIST hash type (md5|sha-1|sha-256) "md5")
