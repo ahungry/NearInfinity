@@ -4,7 +4,7 @@
 <update version="1">
   <general>
     <server>
-      <link>https://github.com/NearInfinityBrowser/NearInfinity/</link>
+      <link>http://nearinfinitybrowser.github.io/NearInfinity/</link>
     </server>
     <info>
       <name>Near Infinity on SHS Forums</name>
@@ -18,7 +18,7 @@
 
   <entry type="latest">
     <file>
-      <name>NearInfinity.jar</name>
+      <filename>NearInfinity.jar</filename>
       <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/snapshot-20150104/NearInfinity-20150104.zip</url>
       <version>v1.35-snapshot-20150104</version>
       <timestamp>2015-01-04T18:26-01:00</timestamp>
@@ -29,7 +29,7 @@
 
   <entry type="stable">
     <file>
-      <name>NearInfinity-1.3.0.jar</name>
+      <filename>NearInfinity-1.3.0.jar</filename>
       <url type="jar">https://github.com/NearInfinityBrowser/NearInfinity/releases/download/w1.3.0/NearInfinity-1.3.0.jar</url>
       <version>v1.33 w1.3.0</version>
       <timestamp>2013-06-24T13:31-01:00</timestamp>
@@ -40,7 +40,7 @@
 
   <entry type="updater">
     <file>
-      <name>NI_Updater.jar</name>
+      <filename>NI_Updater.jar</filename>
       <url type="jar">https://github.com/Argent77/NI_Updater/releases/download/v1.0/NI_Updater.jar</url>
       <version>1.0</version>
       <timestamp>2015-02-03T16:49-01:00</timestamp>
