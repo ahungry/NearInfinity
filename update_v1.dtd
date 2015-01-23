@@ -16,7 +16,7 @@
 
 <!ELEMENT file (filename, url, version, timestamp, hash, link?)>
 
-<!ELEMENT name (#PCDATA)>
+<!ELEMENT filename (#PCDATA)>
 
 <!ELEMENT url (#PCDATA)>
 <!ATTLIST url type (jar|zip|gzip)>
