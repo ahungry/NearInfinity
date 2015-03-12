@@ -14,7 +14,7 @@
 
 <!ELEMENT link (#PCDATA)>
 
-<!ELEMENT file (name, url, version, timestamp, hash, link?)>
+<!ELEMENT file (name, url, version, timestamp, hash, link?, changelog?)>
 
 <!ELEMENT url (#PCDATA)>
 <!ATTLIST url type (jar|zip|gzip)>
@@ -27,3 +27,7 @@
 
 <!ELEMENT hash (#PCDATA)>
 <!ATTLIST hash type (md5|sha-1|sha-256) "md5")
+
+<!ELEMENT changelog (entry+)>
+
+<!ELEMENT entry (#PCDATA)>
