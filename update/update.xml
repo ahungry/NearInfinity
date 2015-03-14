@@ -19,19 +19,14 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150228/NearInfinity-20150228.zip</url>
-      <version>v1.36-20150228</version>
-      <timestamp>2015-02-28T17:07-01:00</timestamp>
-      <hash>e15a04a4da7f7e98bca6888985c0f797</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150228</link>
+      <url type="zip">https://www.dropbox.com/s/07o9hb85io7o8uc/NearInfinity-20150515.zip?dl=1</url>
+      <version>v1.36-20150515</version>
+      <timestamp>2015-05-15T15:05-01:00</timestamp>
+      <hash>f16c473bb296089c80c99ad1f5222e01</hash>
+      <link>https://www.dropbox.com/s/07o9hb85io7o8uc/NearInfinity-20150515.zip?dl=0</link>
       <changelog>
-        <entry>Added Bookmark feature.</entry>
-        <entry>Added "Game Properties" feature.</entry>
-        <entry>Edit the game's INI file.</entry>
-        <entry>Individual game language selection for each game type.</entry>
-        <entry>No restart required when switching game language.</entry>
-        <entry>Tools-&gt;Check-&gt;For corrupted files: Added out-of-range indices check in WED resources.</entry>
-        <entry>Fixed links in view tabs of several resource types.</entry>
+        <entry>Added new features</entry>
+        <entry>Fixed many bugs</entry>
       </changelog>
     </file>
   </release>
