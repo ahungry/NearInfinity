@@ -4,7 +4,7 @@
 <update version="1">
   <general>
     <server>
-      <link>https://github.com/NearInfinityBrowser/NearInfinity/</link>
+      <link>https://nearinfinitybrowser.github.io/NearInfinity/update/update.xml</link>
     </server>
     <info>
       <name>Near Infinity on SHS Forums</name>
@@ -13,6 +13,10 @@
     <info>
       <name>Near Infinity on Baldur's Gate Forums</name>
       <link>http://forum.baldursgate.com/discussion/30593/new-versions-of-nearinfinity-available/</link>
+    </info>
+    <info>
+      <name>AstroBryGuy's Mac OS X specific app packages of Near Infinity</name>
+      <link>https://github.com/AstroBryGuy/NearInfinity-OSX/releases</link>
     </info>
   </general>
 
@@ -24,11 +28,16 @@
       <timestamp>2015-05-15T15:05-01:00</timestamp>
       <hash>f16c473bb296089c80c99ad1f5222e01</hash>
       <link>https://www.dropbox.com/s/07o9hb85io7o8uc/NearInfinity-20150515.zip?dl=0</link>
-      <changelog>
-        <entry>Added new features</entry>
-        <entry>Fixed many bugs</entry>
-      </changelog>
     </file>
+    <changelog>
+      <entry>Added Bookmark feature to the Game menu.</entry>
+      <entry>Added a "Game Properties" feature to the Game menu</entry>
+      <entry>Added option to edit the game's INI file.</entry>
+      <entry>Game language selection will be stored individually for every game type.</entry>
+      <entry>Switching game language doesn't require a restart of Near Infinity anymore.</entry>
+      <entry>Tools-&gt;Check-&gt;For corrupted files: Added check for out of range tile indices in WED resources.</entry>
+      <entry>Fixed links in view tabs of several resource types.</entry>
+    </changelog>
   </release>
 
   <release type="stable">
@@ -39,22 +48,12 @@
       <timestamp>2013-06-24T13:31-01:00</timestamp>
       <hash>ea59bfa96f83db4d373299a8663b31a8</hash>
       <link>https://github.com/NearInfinityBrowser/NearInfinity/releases/tag/w1.3.0</link>
-      <changelog>
-        <entry>From-scratch resource creation</entry>
-        <entry>Headers on exported TIS files</entry>
-        <entry>Improved handling of PRO files</entry>
-        <entry>A number of fixes and tweaks</entry>
-      </changelog>
     </file>
-  </release>
-
-  <release type="updater">
-    <file>
-      <name>NI_Updater.jar</name>
-      <url type="jar">https://github.com/Argent77/NI_Updater/releases/download/v1.0/NI_Updater.jar</url>
-      <version>1.0</version>
-      <timestamp>2015-02-03T16:49-01:00</timestamp>
-      <hash>ffb9a373d9686d59a3c6e1cd5c8a6049</hash>
-    </file>
+    <changelog>
+      <entry>From-scratch resource creation</entry>
+      <entry>Headers on exported TIS files</entry>
+      <entry>Improved handling of PRO files</entry>
+      <entry>A number of fixes and tweaks</entry>
+    </changelog>
   </release>
 </update>
