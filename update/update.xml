@@ -23,20 +23,16 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://www.dropbox.com/s/07o9hb85io7o8uc/NearInfinity-20150515.zip?dl=1</url>
-      <version>v1.36-20150515</version>
-      <timestamp>2015-05-15T15:05-01:00</timestamp>
-      <hash>f16c473bb296089c80c99ad1f5222e01</hash>
-      <link>https://www.dropbox.com/s/07o9hb85io7o8uc/NearInfinity-20150515.zip?dl=0</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150316/NearInfinity-20150316.zip</url>
+      <version>v1.36-20150316</version>
+      <timestamp>2015-03-16T22:53+01:00</timestamp>
+      <hash>8ddba0e104cabadf61817c13b73fb653</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150316</link>
     </file>
     <changelog>
-      <entry>Added Bookmark feature to the Game menu.</entry>
-      <entry>Added a "Game Properties" feature to the Game menu</entry>
-      <entry>Added option to edit the game's INI file.</entry>
-      <entry>Game language selection will be stored individually for every game type.</entry>
-      <entry>Switching game language doesn't require a restart of Near Infinity anymore.</entry>
-      <entry>Tools-&gt;Check-&gt;For corrupted files: Added check for out of range tile indices in WED resources.</entry>
-      <entry>Fixed links in view tabs of several resource types.</entry>
+      <entry>Implemented "Check for updates" feature (found in Help menu).</entry>
+      <entry>Fixed several language-specific issues in Enhanced Edition games.</entry>
+      <entry>Fixed a bug in "Find references" for WAV resources.</entry>
     </changelog>
   </release>
 
@@ -45,7 +41,7 @@
       <name>NearInfinity-1.3.0.jar</name>
       <url type="jar">https://github.com/NearInfinityBrowser/NearInfinity/releases/download/w1.3.0/NearInfinity-1.3.0.jar</url>
       <version>v1.33 w1.3.0</version>
-      <timestamp>2013-06-24T13:31-01:00</timestamp>
+      <timestamp>2013-06-24T13:31+01:00</timestamp>
       <hash>ea59bfa96f83db4d373299a8663b31a8</hash>
       <link>https://github.com/NearInfinityBrowser/NearInfinity/releases/tag/w1.3.0</link>
     </file>
