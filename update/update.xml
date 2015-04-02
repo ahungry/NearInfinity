@@ -23,16 +23,20 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150316/NearInfinity-20150316.zip</url>
-      <version>v1.36-20150316</version>
-      <timestamp>2015-03-16T22:53+01:00</timestamp>
-      <hash>8ddba0e104cabadf61817c13b73fb653</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150316</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150402/NearInfinity-20150402.zip</url>
+      <version>v1.36-20150402</version>
+      <timestamp>2015-04-02T17:51+01:00</timestamp>
+      <hash>8d87a1ffbf8053c5e5a51b4fbd8d2a94</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150402</link>
     </file>
     <changelog>
-      <entry>Implemented "Check for updates" feature (found in Help menu).</entry>
-      <entry>Fixed several language-specific issues in Enhanced Edition games.</entry>
-      <entry>Fixed a bug in "Find references" for WAV resources.</entry>
+      <entry>Reduced loading times of DLG resources.</entry>
+      <entry>Switched to zero-based state and response indices in DLG viewer.</entry>
+      <entry>Fixed a bug in the automatic language detection for game languages.</entry>
+      <entry>Fixed missing update of certain main menu entries when switching game languages.</entry>
+      <entry>Added full BG2EE support of effect opcodes for EET installations.</entry>
+      <entry>Fix unavailable file size info in "New update available" dialog.</entry>
+      <entry>Several more smaller bugfixes.</entry>
     </changelog>
   </release>
 
