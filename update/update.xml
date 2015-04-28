@@ -23,20 +23,21 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150402/NearInfinity-20150402.zip</url>
-      <version>v1.36-20150402</version>
-      <timestamp>2015-04-02T17:51+01:00</timestamp>
-      <hash>8d87a1ffbf8053c5e5a51b4fbd8d2a94</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150402</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150428/NearInfinity-20150428.zip</url>
+      <version>v1.36-20150428</version>
+      <timestamp>2015-04-28T11:18+01:00</timestamp>
+      <hash>0e55878bf21e827f158c84fc3cdecc26</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150428</link>
     </file>
     <changelog>
-      <entry>Reduced loading times of DLG resources.</entry>
-      <entry>Switched to zero-based state and response indices in DLG viewer.</entry>
-      <entry>Fixed a bug in the automatic language detection for game languages.</entry>
-      <entry>Fixed missing update of certain main menu entries when switching game languages.</entry>
-      <entry>Added full BG2EE support of effect opcodes for EET installations.</entry>
-      <entry>Fix unavailable file size info in "New update available" dialog.</entry>
-      <entry>Several more smaller bugfixes.</entry>
+      <entry>Added "Export to PNG" feature to area viewer.</entry>
+      <entry>Fixed black borders around frames of PVRZ-based BAM files created by the BAM Converter.</entry>
+      <entry>Changed loading order of PVRZ files for imported BAM v2 files in BAM Converter.</entry>
+      <entry>Fixed a freezing bug in BCS script editor.</entry>
+      <entry>"Remove" button of structured resources can remove whole ranges of selected entries.</entry>
+      <entry>Expanded "Variable" structures of GAM v2.x and ARE resources.</entry>
+      <entry>Made count and offset fields in structured resources read-only to prevent unwanted side effects.</entry>
+      <entry>Several smaller fixes and updates.</entry>
     </changelog>
   </release>
 
