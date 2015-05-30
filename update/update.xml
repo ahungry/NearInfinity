@@ -23,20 +23,21 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150428/NearInfinity-20150428.zip</url>
-      <version>v1.36-20150428</version>
-      <timestamp>2015-04-28T11:18+01:00</timestamp>
-      <hash>0e55878bf21e827f158c84fc3cdecc26</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150428</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150530/NearInfinity-20150530.zip</url>
+      <version>v1.36-20150530</version>
+      <timestamp>2015-05-30T16:13+01:00</timestamp>
+      <hash>04484b28291e46607c5021fae48c124e</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150530</link>
     </file>
     <changelog>
-      <entry>Added "Export to PNG" feature to area viewer.</entry>
-      <entry>Fixed black borders around frames of PVRZ-based BAM files created by the BAM Converter.</entry>
-      <entry>Changed loading order of PVRZ files for imported BAM v2 files in BAM Converter.</entry>
-      <entry>Fixed a freezing bug in BCS script editor.</entry>
-      <entry>"Remove" button of structured resources can remove whole ranges of selected entries.</entry>
-      <entry>Expanded "Variable" structures of GAM v2.x and ARE resources.</entry>
-      <entry>Made count and offset fields in structured resources read-only to prevent unwanted side effects.</entry>
+      <entry>Added option to export MVE movies as AVI videos and removed legacy MVE to Windows executable wrapper.</entry>
+      <entry>Added option to specify starting game directory as application parameter to NearInfinity.jar.</entry>
+      <entry>Added TobEx-specific opcodes and opcode changes if detected.</entry>
+      <entry>Added effect opcode 360 (Ignore reputation breaking point).</entry>
+      <entry>Greatly improved layout calculation speed for PVRZ-based BAM/MOS/TIS conversions.</entry>
+      <entry>Updated familiar structure and "Save Version" field in GAM resources.</entry>
+      <entry>Added confirmation dialog when leaving decompressed SAV resources.</entry>
+      <entry>Added language-specific override folder support for EE games.</entry>
       <entry>Several smaller fixes and updates.</entry>
     </changelog>
   </release>
