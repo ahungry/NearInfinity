@@ -23,15 +23,21 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150604/NearInfinity-20150604.zip</url>
-      <version>v1.36-20150604</version>
-      <timestamp>2015-06-04T23:32+01:00</timestamp>
-      <hash>5c22dfcd1ad3ebbad8b358ad78a5666f</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150604</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150619/NearInfinity-20150619.zip</url>
+      <version>v1.36-20150619</version>
+      <timestamp>2015-06-19T16:49+01:00</timestamp>
+      <hash>97a6d49b432ffb7f7cabbd5f212f57d6</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150619</link>
     </file>
     <changelog>
-      <entry>Fixed a serious bug in effect opcode 233 which caused file corruption in TobEx/BG2 game installations.</entry>
-      <entry>Added Regular Expression support when searching text files, dialogs or strings in the dialog.tlk.</entry>
+      <entry>WMP: Added option to show map icons and, optionally, travel distances from selected map entry on the world map.</entry>
+      <entry>TIS: Added option to convert palette-based TIS files into the new PVRZ-based TIS format.</entry>
+      <entry>Mass Converter: Added option to automatically convert TIS files into either palette-based or PVRZ-based TIS files.</entry>
+      <entry>ITM: Made icon display in ITM view tab more consistent across different game versions.</entry>
+      <entry>Added option for turning on/off auto indentation in BCS script.</entry>
+      <entry>Fixed a bug when repeatedly opening and closing area viewer via window close button.</entry>
+      <entry>Fixed a bug in DLG resources when adding/removing action or trigger entries.</entry>
+      <entry>Several smaller fixes.</entry>
     </changelog>
   </release>
 
