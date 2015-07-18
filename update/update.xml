@@ -23,21 +23,23 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150619/NearInfinity-20150619.zip</url>
-      <version>v1.36-20150619</version>
-      <timestamp>2015-06-19T16:49+01:00</timestamp>
-      <hash>97a6d49b432ffb7f7cabbd5f212f57d6</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150619</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150718/NearInfinity-20150718.zip</url>
+      <version>v1.36-20150718</version>
+      <timestamp>2015-07-18T12:05+01:00</timestamp>
+      <hash>b7b942f41bb1bf4a71abdb64b539936b</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150718</link>
     </file>
     <changelog>
-      <entry>WMP: Added option to show map icons and, optionally, travel distances from selected map entry on the world map.</entry>
-      <entry>TIS: Added option to convert palette-based TIS files into the new PVRZ-based TIS format.</entry>
-      <entry>Mass Converter: Added option to automatically convert TIS files into either palette-based or PVRZ-based TIS files.</entry>
-      <entry>ITM: Made icon display in ITM view tab more consistent across different game versions.</entry>
-      <entry>Added option for turning on/off auto indentation in BCS script.</entry>
-      <entry>Fixed a bug when repeatedly opening and closing area viewer via window close button.</entry>
-      <entry>Fixed a bug in DLG resources when adding/removing action or trigger entries.</entry>
-      <entry>Several smaller fixes.</entry>
+      <entry>Expanded "Check for corrupted files" to check signature and version fields.</entry>
+      <entry>Enabled syntax highlighting for baldur.ini in Enhanced Edition games.</entry>
+      <entry>Updated option for turning on/off auto indentation in BCS script.</entry>
+      <entry>Added several new fields to WED resources.</entry>
+      <entry>Reassigned field "Wind speed" to "Overlay transparency" in ARE resources (EE only).</entry>
+      <entry>Added original/active class support to proficiency fields in CRE files as used by BG1 or IWD.</entry>
+      <entry>Replaced hardcoded list of strings for primary/secondary types in SPL resources and effect opcodes by values from related 2DA files.</entry>
+      <entry>Table column widths and height of bottom panels in structured resources will be remembered across sessions.</entry>
+      <entry>Added option to open WBM files in applications registered by the OS (which is usually a video player or web browser).</entry>
+      <entry>Several more clean ups, fixes and minor improvements.</entry>
     </changelog>
   </release>
 
