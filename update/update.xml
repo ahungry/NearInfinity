@@ -23,23 +23,19 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150718/NearInfinity-20150718.zip</url>
-      <version>v1.36-20150718</version>
-      <timestamp>2015-07-18T12:05+01:00</timestamp>
-      <hash>b7b942f41bb1bf4a71abdb64b539936b</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150718</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150826/NearInfinity-20150826.zip</url>
+      <version>v1.36-20150826</version>
+      <timestamp>2015-08-26T10:19+01:00</timestamp>
+      <hash>6f8f2231e1165a19016b1bbf3a788bed</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150826</link>
     </file>
     <changelog>
-      <entry>Expanded "Check for corrupted files" to check signature and version fields.</entry>
-      <entry>Enabled syntax highlighting for baldur.ini in Enhanced Edition games.</entry>
-      <entry>Updated option for turning on/off auto indentation in BCS script.</entry>
-      <entry>Added several new fields to WED resources.</entry>
-      <entry>Reassigned field "Wind speed" to "Overlay transparency" in ARE resources (EE only).</entry>
-      <entry>Added original/active class support to proficiency fields in CRE files as used by BG1 or IWD.</entry>
-      <entry>Replaced hardcoded list of strings for primary/secondary types in SPL resources and effect opcodes by values from related 2DA files.</entry>
-      <entry>Table column widths and height of bottom panels in structured resources will be remembered across sessions.</entry>
-      <entry>Added option to open WBM files in applications registered by the OS (which is usually a video player or web browser).</entry>
-      <entry>Several more clean ups, fixes and minor improvements.</entry>
+      <entry>Added option for selecting user-defined font for structured and textual resources.</entry>
+      <entry>Location flags of ARE resources make use of custom entries from AREATYPE.IDS if available.</entry>
+      <entry>Option "Enable Automatic Indentation" completely disables auto-indentation in script files.</entry>
+      <entry>Fixed encoding and decoding of (IWD2) script actions that require more than two string arguments.</entry>
+      <entry>Fixed a regression which disabled storing settings of the the Area Viewer.</entry>
+      <entry>Missing IDS files don't cause scripts to produce errors.</entry>
     </changelog>
   </release>
 
