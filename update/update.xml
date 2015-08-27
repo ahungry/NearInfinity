@@ -23,19 +23,14 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150826/NearInfinity-20150826.zip</url>
-      <version>v1.36-20150826</version>
-      <timestamp>2015-08-26T10:19+01:00</timestamp>
-      <hash>6f8f2231e1165a19016b1bbf3a788bed</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150826</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150827/NearInfinity-20150827.zip</url>
+      <version>v1.36-20150827</version>
+      <timestamp>2015-08-27T21:22+01:00</timestamp>
+      <hash>50082bbe1d389ed7e492c21ca9dc950e</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150827</link>
     </file>
     <changelog>
-      <entry>Added option for selecting user-defined font for structured and textual resources.</entry>
-      <entry>Location flags of ARE resources make use of custom entries from AREATYPE.IDS if available.</entry>
-      <entry>Option "Enable Automatic Indentation" completely disables auto-indentation in script files.</entry>
-      <entry>Fixed encoding and decoding of (IWD2) script actions that require more than two string arguments.</entry>
-      <entry>Fixed a regression which disabled storing settings of the the Area Viewer.</entry>
-      <entry>Missing IDS files don't cause scripts to produce errors.</entry>
+      <entry>Fixed a bug in the initialization routine of the Extended Search dialog.</entry>
     </changelog>
   </release>
 
