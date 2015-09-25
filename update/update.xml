@@ -23,14 +23,22 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150827/NearInfinity-20150827.zip</url>
-      <version>v1.36-20150827</version>
-      <timestamp>2015-08-27T21:22+01:00</timestamp>
-      <hash>50082bbe1d389ed7e492c21ca9dc950e</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150827</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20150925/NearInfinity-20150925.zip</url>
+      <version>v1.36-20150925</version>
+      <timestamp>2015-09-25T18:36+01:00</timestamp>
+      <hash>ac21cbcfd50ddb25761b962e68f9399d</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20150925</link>
     </file>
     <changelog>
-      <entry>Fixed a bug in the initialization routine of the Extended Search dialog.</entry>
+      <entry>Remember target type selections in Reference Searcher.</entry>
+      <entry>Include CRE's script names when searching for resource references.</entry>
+      <entry>Reference Searcher takes EFF's Resource2/3 fields into account.</entry>
+      <entry>Added INI target to Reference Searcher.</entry>
+      <entry>Script compiler considers CRE script names from ARE/actor structures.</entry>
+      <entry>Correct indentations for OR() constructs containing "NextTriggerObject" triggers.</entry>
+      <entry>Added effect entries to ARE projectile trap structures.</entry>
+      <entry>Added loop detection to DLG tree view when auto-expanding.</entry>
+      <entry>Added "Open in new window" button to quicksearch of the resource tree.</entry>
     </changelog>
   </release>
 
