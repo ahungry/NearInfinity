@@ -23,19 +23,24 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151023/NearInfinity-20151023.zip</url>
-      <version>v1.36-20151023</version>
-      <timestamp>2015-10-23T18:42+01:00</timestamp>
-      <hash>819dc49bb47bbeffc7a46c32a549137a</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151023</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151112/NearInfinity-20151112.zip</url>
+      <version>v1.36-20151123</version>
+      <timestamp>2015-11-12T15:35+01:00</timestamp>
+      <hash>9cdb4fd4bba51187bd167fcf6c1fb3a1</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151112</link>
     </file>
     <changelog>
-      <entry>Fixed a bug in Reference Searcher for StringRefs.</entry>
-      <entry>Improved Reference Searcher for CRE resources.</entry>
-      <entry>Added new datatype which provides a textual interpretation of SPLPROT.2DA entries for IWD-style IDS values.</entry>
-      <entry>Replaced static list of portrait icon descriptions by a dynamic list generated from STATDESC.2DA.</entry>
-      <entry>Added tool tips support for a number of flags.</entry>
-      <entry>Better command line parameter support: Call "java -jar NearInfinity.jar -help" for more information.</entry>
+      <entry>Fixed several bugs related to displaying false positives in check routines.</entry>
+      <entry>Increased speed of check and search routines on multi-core systems.</entry>
+      <entry>Increased speed of Mass Exporter on multi-core systems.</entry>
+      <entry>Enforcing specific charset when reading filenames from chitin.key.</entry>
+      <entry>Added a resource type "guess" routine for resources of unknown type or file extension.</entry>
+      <entry>Added label to ITM flags bit 12.</entry>
+      <entry>Check for unused files: Added check for WAV resources attached to strrefs.</entry>
+      <entry>Fixed a bug in resource reference fields, which didn't properly consider resources in extra directories.</entry>
+      <entry>Numeric input fields in structured resources allow both decimal and hexadecimal user input.</entry>
+      <entry>Fixed a bug in Flag fields based on IDS entries (i.e. CRE-&gt;Status flags)</entry>
+      <entry>Fixed jumping to line of error/warning in script resources.</entry>
       <entry>Several minor fixes and improvements.</entry>
     </changelog>
   </release>
