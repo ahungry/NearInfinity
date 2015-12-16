@@ -23,25 +23,26 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151112/NearInfinity-20151112.zip</url>
-      <version>v1.36-20151123</version>
-      <timestamp>2015-11-12T15:35+01:00</timestamp>
-      <hash>9cdb4fd4bba51187bd167fcf6c1fb3a1</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151112</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151216/NearInfinity-20151216.zip</url>
+      <version>v1.36-20151216</version>
+      <timestamp>2015-12-16T14:39+01:00</timestamp>
+      <hash>cb220e86b500985a95eb61aeef32e4ca</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151216</link>
     </file>
     <changelog>
-      <entry>Fixed several bugs related to displaying false positives in check routines.</entry>
-      <entry>Increased speed of check and search routines on multi-core systems.</entry>
-      <entry>Increased speed of Mass Exporter on multi-core systems.</entry>
-      <entry>Enforcing specific charset when reading filenames from chitin.key.</entry>
-      <entry>Added a resource type "guess" routine for resources of unknown type or file extension.</entry>
-      <entry>Added label to ITM flags bit 12.</entry>
-      <entry>Check for unused files: Added check for WAV resources attached to strrefs.</entry>
-      <entry>Fixed a bug in resource reference fields, which didn't properly consider resources in extra directories.</entry>
-      <entry>Numeric input fields in structured resources allow both decimal and hexadecimal user input.</entry>
-      <entry>Fixed a bug in Flag fields based on IDS entries (i.e. CRE-&gt;Status flags)</entry>
-      <entry>Fixed jumping to line of error/warning in script resources.</entry>
-      <entry>Several minor fixes and improvements.</entry>
+      <entry>Major overhaul of the datatypes used in structured resources.</entry>
+      <entry>Added new Tools->Check->For Illegal Strrefs... feature.</entry>
+      <entry>Added "Expiry time" field to Item structures in ARE resources.</entry>
+      <entry>BS scripts can be selected in relevant resource reference fields.</entry>
+      <entry>Extended parameter 2 of opcode 58 (Dispel Effects) in Enhanced Editions.</entry>
+      <entry>Updated params of opcode 294 (Set Existence Delay).</entry>
+      <entry>Improved descriptions of value fields in GAM's Variable structures.</entry>
+      <entry>Fixed infinite blocking bug when opening games via bookmarks.</entry>
+      <entry>Fixed a bug which occasionally caused errors in various search routines.</entry>
+      <entry>Fixed a bug in "Secondary projectile" field of PRO resources.</entry>
+      <entry>Fixed Master/Current area field labels in GAM resources.</entry>
+      <entry>Fixed Kit field type in IWD2.</entry>
+      <entry>Several more bugfixes and improvements.</entry>
     </changelog>
   </release>
 
