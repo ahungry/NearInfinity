@@ -23,26 +23,19 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151216/NearInfinity-20151216.zip</url>
-      <version>v1.36-20151216</version>
-      <timestamp>2015-12-16T14:39+01:00</timestamp>
-      <hash>cb220e86b500985a95eb61aeef32e4ca</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151216</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151227/NearInfinity-20151227.zip</url>
+      <version>v1.36-20151227</version>
+      <timestamp>2015-12-27T19:16+01:00</timestamp>
+      <hash>3a5c67bf84b98a149cf564f6e0813613</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151227</link>
     </file>
     <changelog>
-      <entry>Major overhaul of the datatypes used in structured resources.</entry>
-      <entry>Added new Tools->Check->For Illegal Strrefs... feature.</entry>
-      <entry>Added "Expiry time" field to Item structures in ARE resources.</entry>
-      <entry>BS scripts can be selected in relevant resource reference fields.</entry>
-      <entry>Extended parameter 2 of opcode 58 (Dispel Effects) in Enhanced Editions.</entry>
-      <entry>Updated params of opcode 294 (Set Existence Delay).</entry>
-      <entry>Improved descriptions of value fields in GAM's Variable structures.</entry>
-      <entry>Fixed infinite blocking bug when opening games via bookmarks.</entry>
-      <entry>Fixed a bug which occasionally caused errors in various search routines.</entry>
-      <entry>Fixed a bug in "Secondary projectile" field of PRO resources.</entry>
-      <entry>Fixed Master/Current area field labels in GAM resources.</entry>
-      <entry>Fixed Kit field type in IWD2.</entry>
-      <entry>Several more bugfixes and improvements.</entry>
+      <entry>Fixed very long loading or search times (mainly) for SPL or ITM resources.</entry>
+      <entry>Fixed an issue which incorrectly enabled the "Play sound" buttons for all strings in DLG resources.</entry>
+      <entry>Added drag and drop support for files to the whole Near Infinity window.</entry>
+      <entry>Added new "Search reference" feature to MUS resources.</entry>
+      <entry>Added more IDS resource entries to the BCS syntax highlighter.</entry>
+      <entry>Changed ARE "Wind speed" field into "Overlay transparency" for all Enhanced Edition games.</entry>
     </changelog>
   </release>
 
