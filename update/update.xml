@@ -23,19 +23,23 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20151227/NearInfinity-20151227.zip</url>
-      <version>v1.36-20151227</version>
-      <timestamp>2015-12-27T19:16+01:00</timestamp>
-      <hash>3a5c67bf84b98a149cf564f6e0813613</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20151227</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20160112/NearInfinity-20160112.zip</url>
+      <version>v1.36-20160112</version>
+      <timestamp>2016-01-12T18:56+01:00</timestamp>
+      <hash>336d26c9a3033910ebb27d86cec12ac2</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20160112</link>
     </file>
     <changelog>
-      <entry>Fixed very long loading or search times (mainly) for SPL or ITM resources.</entry>
-      <entry>Fixed an issue which incorrectly enabled the "Play sound" buttons for all strings in DLG resources.</entry>
-      <entry>Added drag and drop support for files to the whole Near Infinity window.</entry>
-      <entry>Added new "Search reference" feature to MUS resources.</entry>
-      <entry>Added more IDS resource entries to the BCS syntax highlighter.</entry>
-      <entry>Changed ARE "Wind speed" field into "Overlay transparency" for all Enhanced Edition games.</entry>
+      <entry>Added spawned actors by INI file to the Area Viewer.</entry>
+      <entry>Added option to add new files to SAV resources and added confirmation for deleting file entries.</entry>
+      <entry>Added text edit and hex edit feature for unknown or unsupported files</entry>
+      <entry>Improved consistency check for structured resources to reduce the number of incorrectly detected unused data or holes.</entry>
+      <entry>Fixed an issue with language selections in EET games.</entry>
+      <entry>Various text search functions: Fixed an wrong line auto-highlighted in text files if the first line was empty.</entry>
+      <entry>Lots of internal optimizations in structured resources.</entry>
+      <entry>Improved component structure names in VEF resources.</entry>
+      <entry>Fixed a bug in NI's update check routine.</entry>
+      <entry>Several minor fixes.</entry>
     </changelog>
   </release>
 
