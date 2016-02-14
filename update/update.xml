@@ -23,23 +23,26 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20160112/NearInfinity-20160112.zip</url>
-      <version>v1.36-20160112</version>
-      <timestamp>2016-01-12T18:56+01:00</timestamp>
-      <hash>336d26c9a3033910ebb27d86cec12ac2</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20160112</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v1.36-20160214/NearInfinity-20160214.zip</url>
+      <version>v1.36-20160214</version>
+      <timestamp>2016-02-14T22:02+01:00</timestamp>
+      <hash>3178d30c205f7b16212bd0c9d366032f</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v1.36-20160214</link>
     </file>
     <changelog>
-      <entry>Added spawned actors by INI file to the Area Viewer.</entry>
-      <entry>Added option to add new files to SAV resources and added confirmation for deleting file entries.</entry>
-      <entry>Added text edit and hex edit feature for unknown or unsupported files</entry>
-      <entry>Improved consistency check for structured resources to reduce the number of incorrectly detected unused data or holes.</entry>
-      <entry>Fixed an issue with language selections in EET games.</entry>
-      <entry>Various text search functions: Fixed an wrong line auto-highlighted in text files if the first line was empty.</entry>
-      <entry>Lots of internal optimizations in structured resources.</entry>
-      <entry>Improved component structure names in VEF resources.</entry>
-      <entry>Fixed a bug in NI's update check routine.</entry>
-      <entry>Several minor fixes.</entry>
+      <entry>Added "Import/Export BAM session" feature to BAM Converter.</entry>
+      <entry>Added option to import or add internal game resources to the BAM Converter.</entry>
+      <entry>Added an "Edit BAM" button to the BAM resource viewer.</entry>
+      <entry>Added "Raw" tab to BAM resource viewer.</entry>
+      <entry>Added Save Type bit 25 description for TobEx installations.</entry>
+      <entry>Added a new EE-specific field to effect v2 structures.</entry>
+      <entry>Added option "Show icons in DLG tree viewer" to Options menu.</entry>
+      <entry>Fixed a side effect of disabling the "Enable transparency" checkbox in the BAM resource viewer.</entry>
+      <entry>Fixed a bug in the cycle update mechanism of the BAM Converter when adding new frames.</entry>
+      <entry>Fixed autoselection in resource list panels of structured resources when typing into the text field.</entry>
+      <entry>Fixed a bug in DLG resources when selecting empty script structures.</entry>
+      <entry>Spelling fix "Detect Illusions" -&gt; "Detect Illusion".</entry>
+      <entry>Several more minor fixes and improvements.</entry>
     </changelog>
   </release>
 
