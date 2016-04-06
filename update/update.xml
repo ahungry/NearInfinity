@@ -23,11 +23,11 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160406/NearInfinity-20160406.zip</url>
-      <version>v2.0-20160406</version>
-      <timestamp>2016-04-06T19:41+01:00</timestamp>
-      <hash>eff3abfb3abc40f359f36433bd5b50c7</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160406</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160406-1/NearInfinity-20160406-1.zip</url>
+      <version>v2.0-20160406-1</version>
+      <timestamp>2016-04-06T22:41+01:00</timestamp>
+      <hash>e5119ca175f4ff1d5939c3be29fecc34</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160406-1</link>
     </file>
     <changelog>
       <entry>Upgraded code base to be compatible with Java 8. NI won't start with Java 7 or older anymore.</entry>
@@ -37,6 +37,7 @@
       <entry>Full support of LUA, MENU, PNG and TTF resource types.</entry>
       <entry>Home folder name for EE games is retrieved from "engine.lua" if available.</entry>
       <entry>"baldur.lua" can be accessed via Edit-&gt;baldur.lua or in the Game Properties</entry>
+      <entry>Support of savegame folders "sodsave" and "mpsodsave" (retrieved dynamically from CAMPAIGN.2DA if available).</entry>
       <entry>Added many new effect opcodes supported by Enhanced Edition games since patch v2.0.</entry>
       <entry>The Near Infinity Wiki can be opened from the "About Near Infinity" dialog and from a separate Help menu entry.</entry>
       <entry>BCS syntax highlighter loads IDS symbols dynamically instead of using a hardcoded list.</entry>
@@ -53,18 +54,17 @@
       <entry>Fixed a bug in the BAM Converter's session export and import routines if the configuration includes a "Replace colors" filter.</entry>
       <entry>Fixed a bug of missing "ANYONE" entries in IDS target fields in non-Enhanced games.</entry>
       <entry>Many internal fixes and optimizations.</entry>
-      <entry>Support of savegame folders "sodsave" and "mpsodsave" (retrieved dynamically from CAMPAIGN.2DA if available).</entry>
     </changelog>
   </release>
 
   <release type="stable">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160406/NearInfinity-20160406.zip</url>
-      <version>v2.0-20160406</version>
-      <timestamp>2016-04-06T19:41+01:00</timestamp>
-      <hash>eff3abfb3abc40f359f36433bd5b50c7</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160406</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160406-1/NearInfinity-20160406-1.zip</url>
+      <version>v2.0-20160406-1</version>
+      <timestamp>2016-04-06T22:41+01:00</timestamp>
+      <hash>e5119ca175f4ff1d5939c3be29fecc34</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160406-1</link>
     </file>
     <changelog>
       <entry>Upgraded code base to be compatible with Java 8. NI won't start with Java 7 or older anymore.</entry>
@@ -74,6 +74,7 @@
       <entry>Full support of LUA, MENU, PNG and TTF resource types.</entry>
       <entry>Home folder name for EE games is retrieved from "engine.lua" if available.</entry>
       <entry>"baldur.lua" can be accessed via Edit-&gt;baldur.lua or in the Game Properties</entry>
+      <entry>Support of savegame folders "sodsave" and "mpsodsave" (retrieved dynamically from CAMPAIGN.2DA if available).</entry>
       <entry>Added many new effect opcodes supported by Enhanced Edition games since patch v2.0.</entry>
       <entry>The Near Infinity Wiki can be opened from the "About Near Infinity" dialog and from a separate Help menu entry.</entry>
       <entry>BCS syntax highlighter loads IDS symbols dynamically instead of using a hardcoded list.</entry>
@@ -90,7 +91,6 @@
       <entry>Fixed a bug in the BAM Converter's session export and import routines if the configuration includes a "Replace colors" filter.</entry>
       <entry>Fixed a bug of missing "ANYONE" entries in IDS target fields in non-Enhanced games.</entry>
       <entry>Many internal fixes and optimizations.</entry>
-      <entry>Support of savegame folders "sodsave" and "mpsodsave" (retrieved dynamically from CAMPAIGN.2DA if available).</entry>
     </changelog>
   </release>
 </update>
