@@ -23,37 +23,18 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160406-1/NearInfinity-20160406-1.zip</url>
-      <version>v2.0-20160406-1</version>
-      <timestamp>2016-04-06T22:41+01:00</timestamp>
-      <hash>e5119ca175f4ff1d5939c3be29fecc34</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160406-1</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160407/NearInfinity-20160407.zip</url>
+      <version>v2.0-20160407</version>
+      <timestamp>2016-04-07T23:31+01:00</timestamp>
+      <hash>f54e79946e2e5b0a03d86cce1559e3f0</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160407</link>
     </file>
     <changelog>
-      <entry>Upgraded code base to be compatible with Java 8. NI won't start with Java 7 or older anymore.</entry>
-      <entry>Added full Siege of Dragonspear support.</entry>
-      <entry>Added support for DLCs in the form of zip archives for Enhanced Edition games.</entry>
-      <entry>Added list of detected DLC archives in the "Game Properties" dialog if available.</entry>
-      <entry>Full support of LUA, MENU, PNG and TTF resource types.</entry>
-      <entry>Home folder name for EE games is retrieved from "engine.lua" if available.</entry>
-      <entry>"baldur.lua" can be accessed via Edit-&gt;baldur.lua or in the Game Properties</entry>
-      <entry>Support of savegame folders "sodsave" and "mpsodsave" (retrieved dynamically from CAMPAIGN.2DA if available).</entry>
-      <entry>Added many new effect opcodes supported by Enhanced Edition games since patch v2.0.</entry>
-      <entry>The Near Infinity Wiki can be opened from the "About Near Infinity" dialog and from a separate Help menu entry.</entry>
-      <entry>BCS syntax highlighter loads IDS symbols dynamically instead of using a hardcoded list.</entry>
-      <entry>Improved DLG Tree Viewer: Added syntax highlighting and resref links to triggers and actions.</entry>
-      <entry>BAM Converter: Added GIF import support, which includes static and animated GIFs.</entry>
-      <entry>Improved effect opcode 78 (Disease) for Enhanced Edition games.</entry>
-      <entry>Improved effect opcode 233 (Modify proficiencies) for Enhanced Edition games.</entry>
-      <entry>Edit-&gt;BIFF Editor and Tools-&gt;Keyfile Cleanup have been disabled because of unsolved issues caused by the internal design change.</entry>
-      <entry>Added option "Include extra folders" to Mass Exporter.</entry>
-      <entry>Mass Exporter takes "Ignore Overrides" option into account when exporting resources.</entry>
-      <entry>Restricted "Find selected attribute" option found in structured resources to fields of same type.</entry>
-      <entry>Fixed drawing of wall polygons in the Area Viewer that are flagged as "hovering walls".</entry>
-      <entry>Fixed duplicate entries in resource tree if resource of same name exists is extra folder of same name but different location.</entry>
-      <entry>Fixed a bug in the BAM Converter's session export and import routines if the configuration includes a "Replace colors" filter.</entry>
-      <entry>Fixed a bug of missing "ANYONE" entries in IDS target fields in non-Enhanced games.</entry>
-      <entry>Many internal fixes and optimizations.</entry>
+      <entry>Added support for language-specific BIFF files in Enhanced Edition games.</entry>
+      <entry>"Find selected attribute" function handles numeric search values correctly.</entry>
+      <entry>Update check dialog: Text in Changelog tab will not automatically be scrolled down anymore.</entry>
+      <entry>Fixed a regression which placed resources into the Override folder even when "??? Folders" option was active.</entry>
+      <entry>Various internal optimizations and fixes.</entry>
     </changelog>
   </release>
 
