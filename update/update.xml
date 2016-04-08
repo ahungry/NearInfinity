@@ -23,18 +23,18 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160407/NearInfinity-20160407.zip</url>
-      <version>v2.0-20160407</version>
-      <timestamp>2016-04-07T23:31+01:00</timestamp>
-      <hash>f54e79946e2e5b0a03d86cce1559e3f0</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160407</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160408/NearInfinity-20160408.zip</url>
+      <version>v2.0-20160408</version>
+      <timestamp>2016-04-08T21:14+01:00</timestamp>
+      <hash>8bc6afe8d586f98848cf9d526c42bc80</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160408</link>
     </file>
     <changelog>
-      <entry>Added support for language-specific BIFF files in Enhanced Edition games.</entry>
-      <entry>"Find selected attribute" function handles numeric search values correctly.</entry>
-      <entry>Update check dialog: Text in Changelog tab will not automatically be scrolled down anymore.</entry>
-      <entry>Fixed a regression which placed resources into the Override folder even when "??? Folders" option was active.</entry>
-      <entry>Various internal optimizations and fixes.</entry>
+      <entry>Fixed a regression which causes read errors when trying to open resources from the wrong BIFFs.</entry>
+      <entry>Fixed a bug of not adding the "Save Type" field to version 1 effect structures in non-Enhanced BG2 installations when TobEx has been detected.</entry>
+      <entry>Fixed a regression of incorrect number detection in attribute search routine.</entry>
+      <entry>Fixed an incorrect field name in ITM resources.</entry>
+      <entry>Slightly improved loading times when opening new games.</entry>
     </changelog>
   </release>
 
