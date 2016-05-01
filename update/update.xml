@@ -23,18 +23,22 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160408/NearInfinity-20160408.zip</url>
-      <version>v2.0-20160408</version>
-      <timestamp>2016-04-08T21:14+01:00</timestamp>
-      <hash>8bc6afe8d586f98848cf9d526c42bc80</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160408</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160501/NearInfinity-20160501.zip</url>
+      <version>v2.0-20160501</version>
+      <timestamp>2016-05-01T17:41+01:00</timestamp>
+      <hash>54ac209910b2b72891057e6c8a209af7</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160501</link>
     </file>
     <changelog>
-      <entry>Fixed a regression which causes read errors when trying to open resources from the wrong BIFFs.</entry>
-      <entry>Fixed a bug of not adding the "Save Type" field to version 1 effect structures in non-Enhanced BG2 installations when TobEx has been detected.</entry>
-      <entry>Fixed a regression of incorrect number detection in attribute search routine.</entry>
-      <entry>Fixed an incorrect field name in ITM resources.</entry>
-      <entry>Slightly improved loading times when opening new games.</entry>
+      <entry>Added bits 22 and 23 to CRE flags.</entry>
+      <entry>An asterisk denotes the selected weapon in View mode (Items/Spells tab) of CRE resources.</entry>
+      <entry>AddMapNote() and AddMapNoteColor() will display note string as comment in script editor.</entry>
+      <entry>The quick search of the navigation tree now includes resources from extra directories (Movies, Sounds, etc.).</entry>
+      <entry>Fixed a bug which skipped a number of extra directories when searching for resources.</entry>
+      <entry>Fixed a bug in dec/hex/bin array datatypes which didn't update modified values.</entry>
+      <entry>Fixed a bug which failed to determine the correct BIFF folders under specific conditions in non-Enhanced games.</entry>
+      <entry>SoD provided as zipped archive will be detected properly even if the game's home folder does not yet exist.</entry>
+      <entry>Several internal optimizations.</entry>
     </changelog>
   </release>
 
