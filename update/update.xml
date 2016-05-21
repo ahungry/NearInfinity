@@ -23,14 +23,25 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160502/NearInfinity-20160502.zip</url>
-      <version>v2.0-20160502</version>
-      <timestamp>2016-05-02T15:40+01:00</timestamp>
-      <hash>02c889c2c9df5dd997cad787781606ab</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160502</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160521/NearInfinity-20160521.zip</url>
+      <version>v2.0-20160521</version>
+      <timestamp>2016-05-21T15:09+01:00</timestamp>
+      <hash>f4e0560ebf59d22f600bb1c052a13209</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160521</link>
     </file>
     <changelog>
-      <entry>Fixed a regression which prevented resources from override folders to be loaded into the resource tree.</entry>
+      <entry>Added option to hide unsupported or unknown resource types and invalid filenames (see Options -> Show Unknown Resource Types).</entry>
+      <entry>List controls in View tabs of various resources will now jump to the first matching entry when typing while the control has focus.</entry>
+      <entry>Updated fields and flag descriptions of various resource structures (which includes several ARE, GAM and PRO structures).</entry>
+      <entry>View tabs of CRE resources can now also display custom portraits from the "Portraits" folder of the game.</entry>
+      <entry>View tabs of CRE resource will display portraits in BAM format, which is used by PST.</entry>
+      <entry>Improved game detection check for SoD.</entry>
+      <entry>Removed Raw tabs from TOH and TOT resources because of internal issues.</entry>
+      <entry>Fixed option "Show Override Files -> In ??? Folders (CRE, SPL, ...)".</entry>
+      <entry>Fixed a bug which prevented result windows from check or search operations to close.</entry>
+      <entry>Fixed a condition which triggered a "Overwrite file" dialog for TIS->PNG conversion even if no files was there to overwrite.</entry>
+      <entry>Fixed filters in Extended Search -> ITM -> Item Ability section not finding matches.</entry>
+      <entry>Some internal test routines and fixes (thanks drakir).</entry>
     </changelog>
   </release>
 
