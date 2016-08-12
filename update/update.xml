@@ -23,21 +23,22 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160616/NearInfinity-20160616.zip</url>
-      <version>v2.0-20160616</version>
-      <timestamp>2016-06-16T15:51+01:00</timestamp>
-      <hash>8772a5dfc6dda4cfc0fd88793316ae40</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160616</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20160812/NearInfinity-20160812.zip</url>
+      <version>v2.0-20160812</version>
+      <timestamp>2016-08-12T16:42+01:00</timestamp>
+      <hash>b28b48663fd739a1e0f72b0ee9e52fb5</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20160812</link>
     </file>
     <changelog>
-      <entry>Added LUA type to text search.</entry>
-      <entry>Added "Find references..." option to 2DA resources.</entry>
-      <entry>Allow unknown or unrecognized game types to be bookmarked.</entry>
-      <entry>Reverted improved SoD game detection because of unintended side effects.</entry>
-      <entry>Fixed a bug in Area Viewer which derived mini maps from ARE filenames instead of WED filenames.</entry>
-      <entry>Fixed search order of DLC archives in EE games (in case you installed more than one DLC).</entry>
-      <entry>Fixed a bug which prevented a number of game resources to load when multiple DLC archives were detected in EE games.</entry>
-      <entry>More internal test routines and fixes (thanks drakir).</entry>
+      <entry>Added "Edit as hex number" to context menu for numeric fields in structured resources.</entry>
+      <entry>Added new ITM flag "EE: Adamantine".</entry>
+      <entry>Display map names in addition to area codes in worldmap viewer.</entry>
+      <entry>Updated datatype for CRE's "Animation" field to allow opening associated INI or 2DA resources.</entry>
+      <entry>Updated fields for a number of effect opcodes.</entry>
+      <entry>Fixed a bug that added Windows-style linebreaks instead of UNIX-style linebreaks to BCS files.</entry>
+      <entry>Fixed datatype for setting color ranges (e.g. used for creature colors).</entry>
+      <entry>Fixed decoding of MoveContainerContents() script action.</entry>
+      <entry>Several minor fixes.</entry>
     </changelog>
   </release>
 
