@@ -23,18 +23,27 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20161118/NearInfinity-20161118.zip</url>
-      <version>v2.0-20161118</version>
-      <timestamp>2016-11-18T15:43+01:00</timestamp>
-      <hash>646e341ebff86faecf7814e8cb1e82a2</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20161118</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20170106/NearInfinity-20170106.zip</url>
+      <version>v2.0-20170106</version>
+      <timestamp>2017-01-06T20:29+01:00</timestamp>
+      <hash>da183c7d6676277d010f9e7363312b82</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20170106</link>
     </file>
     <changelog>
-      <entry>Added behavior flags bit 6 to PRO resources.</entry>
-      <entry>Added new command line option to enforce a specific game type.</entry>
-      <entry>Updated effect opcodes 99 and 342.</entry>
-      <entry>Changed Memorization field type in CRE -> Memorized Spells structure.</entry>
-      <entry>Fixed a bug when adding resources to decompressed SAV files.</entry>
+      <entry>Added a "Properties" feature to BAM and MOS resource viewers.</entry>
+      <entry>Added new color scheme "Monokai". It may be necessary to reset selected color schemes for BCS, GLSL, LUA and SQL files.</entry>
+      <entry>Updated exclusion flags of SPL resources. Flag descriptions change depending on selected spell type.</entry>
+      <entry>Improved TIS export into PVRZ-based variant by attempting to preserve relative tileset structure for door regions and extra tiles.</entry>
+      <entry>Improved consistency in PVRZ file generation between BAM, MOS, PVRZ and TIS converters by setting background color to full transparency.</entry>
+      <entry>Improved transparent color detection in BAM V1 decoder.</entry>
+      <entry>Improved ACT palette import routine for BAM converter.</entry>
+      <entry>Improved description of effect "Dispel/Resistance" type 0.</entry>
+      <entry>Improved field names in ARE > Door structures and Vertex structures.</entry>
+      <entry>Improved field names in WED > Overlay Tilemap structures.</entry>
+      <entry>Removed a restriction which prevented NI from referencing BIFF folders outside the current game installation path (relevant only for non-EE games).</entry>
+      <entry>Fixed a condition which prevented NI to provide an option to export BAM resources as compressed BAMs.</entry>
+      <entry>Fixed a bug which prevented loading different PVRZ files of same name, but different locations.</entry>
+      <entry>Several minor bugfixes.</entry>
     </changelog>
   </release>
 
