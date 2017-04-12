@@ -23,27 +23,30 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.0-20170106/NearInfinity-20170106.zip</url>
-      <version>v2.0-20170106</version>
-      <timestamp>2017-01-06T20:29+01:00</timestamp>
-      <hash>da183c7d6676277d010f9e7363312b82</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.0-20170106</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170412/NearInfinity-20170412.zip</url>
+      <version>v2.1-20170412</version>
+      <timestamp>2017-04-12T13:36+01:00</timestamp>
+      <hash>635a0e74b686c3c94ac4d959768ad6c9</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170412</link>
     </file>
     <changelog>
-      <entry>Added a "Properties" feature to BAM and MOS resource viewers.</entry>
-      <entry>Added new color scheme "Monokai". It may be necessary to reset selected color schemes for BCS, GLSL, LUA and SQL files.</entry>
-      <entry>Updated exclusion flags of SPL resources. Flag descriptions change depending on selected spell type.</entry>
-      <entry>Improved TIS export into PVRZ-based variant by attempting to preserve relative tileset structure for door regions and extra tiles.</entry>
-      <entry>Improved consistency in PVRZ file generation between BAM, MOS, PVRZ and TIS converters by setting background color to full transparency.</entry>
-      <entry>Improved transparent color detection in BAM V1 decoder.</entry>
-      <entry>Improved ACT palette import routine for BAM converter.</entry>
-      <entry>Improved description of effect "Dispel/Resistance" type 0.</entry>
-      <entry>Improved field names in ARE > Door structures and Vertex structures.</entry>
-      <entry>Improved field names in WED > Overlay Tilemap structures.</entry>
-      <entry>Removed a restriction which prevented NI from referencing BIFF folders outside the current game installation path (relevant only for non-EE games).</entry>
-      <entry>Fixed a condition which prevented NI to provide an option to export BAM resources as compressed BAMs.</entry>
-      <entry>Fixed a bug which prevented loading different PVRZ files of same name, but different locations.</entry>
-      <entry>Several minor bugfixes.</entry>
+      <entry>Added PST:EE support.</entry>
+      <entry>Added a new implementation of BCS compiler and decompiler from scratch.</entry>
+      <entry>Improved script editor.</entry>
+      <entry>Greatly overhauled string table editor.</entry>
+      <entry>Basic syntax highlighting for text strings.</entry>
+      <entry>Added a DLG -&gt; D export option.</entry>
+      <entry>Increased performance when adding or removing substructures in structured resources.</entry>
+      <entry>Updated 'Special' parameter of opcode 318 (Restrict item)</entry>
+      <entry>Minor improvements to quick search feature of resource tree.</entry>
+      <entry>File extensions of BAM Converter session files are better handled.</entry>
+      <entry>Updated opcodes 182, 183, 214 and 273.</entry>
+      <entry>Improved opcode 219 parameter types.</entry>
+      <entry>Added new condition "Target's spell state is 'Special'" to opcode 232 (Cast spell on condition).</entry>
+      <entry>Fixed a bug in resources fields which pointed to the wrong UI control after cloning a removable structure.</entry>
+      <entry>Fixed initial state of EE opcode 328 (Set spell state) based on 'Special' parameter.</entry>
+      <entry>Fixed a baldur.lua parsing error if the file contains non-ASCII characters.</entry>
+      <entry>Many more bugfixes and improvements under the hood.</entry>
     </changelog>
   </release>
 
