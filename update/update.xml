@@ -23,15 +23,16 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170413/NearInfinity-20170413.zip</url>
-      <version>v2.1-20170413</version>
-      <timestamp>2017-04-13T17:02+02:00</timestamp>
-      <hash>31053d097a63fd5d4665bf80d89de22c</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170413</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170416/NearInfinity-20170416.zip</url>
+      <version>v2.1-20170416</version>
+      <timestamp>2017-04-16T14:06+02:00</timestamp>
+      <hash>ecf665b298a0c07aa48c7200ccbefefe</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170416</link>
     </file>
     <changelog>
-      <entry>Fixed a bug which prevented opening games containing DLC archives.</entry>
-      <entry>Fixed a script compiler bug which incorrectly encoded a certain script action in PST:EE.</entry>
+      <entry>Fixed a bug in script compiler that assigned wrong TriggerOverride function ID in BG2+ToBEx installations.</entry>
+      <entry>Fixed incorrectly referenced BIFF resources if DLC archives are present.</entry>
+      <entry>Fixed projectile IDs being off by 1.</entry>
     </changelog>
   </release>
 
