@@ -23,21 +23,22 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170529/NearInfinity-20170529.zip</url>
-      <version>v2.1-20170529</version>
-      <timestamp>2017-05-29T22:52+02:00</timestamp>
-      <hash>c26454a74ca7dbf1ae0a7262c3a8d802</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170529</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170731/NearInfinity-20170731.zip</url>
+      <version>v2.1-20170731</version>
+      <timestamp>2017-07-31T12:39+02:00</timestamp>
+      <hash>ef778f7a66fdd1f011e8d169999a58d9</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170731</link>
     </file>
     <changelog>
-      <entry>Marked opcode 322 (AoE evade check) as deprecated.</entry>
-      <entry>Added a "Properties" feature to PVRZ resource viewer. (thanks winterheart)</entry>
-      <entry>New export option for PVRZ resources: to PVR (uncompressed).</entry>
-      <entry>Image to PVRZ converter accepts PVR input files which will be compressed directly without reencoding.</entry>
-      <entry>Paste operations will insert removable structures at current selection.</entry>
-      <entry>Fixed a bug that prevented new or changed CRE script names from being cached after refreshing the resource tree.</entry>
-      <entry>Fixed erroneous warnings about missing 2DA resrefs triggered by script compiler.</entry>
-      <entry>General code cleanup and optimizations. (thanks winterheart)</entry>
+      <entry>Greatly improved PLT resource viewer.</entry>
+      <entry>Show more detailed journal info in DLG viewer.</entry>
+      <entry>More accurate representation of random colors (used by CRE or PRO resources).</entry>
+      <entry>Added new BAM Converter filter "Single frame BAM output".</entry>
+      <entry>Fixed incorrect CRE item slot definitions in PST:EE.</entry>
+      <entry>Fixed incorrect "South link" label in WMP resources.</entry>
+      <entry>Fixed a bug that failed to open resource types PVRZ, FNT, TTF and MAZE in non-EE games.</entry>
+      <entry>Fixed a bug where the resource tree failed to detect selection of different resources with identical names.</entry>
+      <entry>Several internal fixes and improvements.</entry>
     </changelog>
   </release>
 
