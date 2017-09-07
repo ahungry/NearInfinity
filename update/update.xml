@@ -23,18 +23,20 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170809/NearInfinity-20170809.zip</url>
-      <version>v2.1-20170809</version>
-      <timestamp>2017-08-09T19:52+02:00</timestamp>
-      <hash>84d867403b95bc50eea309d960af36aa</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170809</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170907/NearInfinity-20170907.zip</url>
+      <version>v2.1-20170907</version>
+      <timestamp>2017-09-07T14:54+02:00</timestamp>
+      <hash>1c05935a7ab60e40c5fadbfb8e2fe4fe</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170907</link>
     </file>
     <changelog>
-      <entry>Removed compiler option "Interactive script and resource names" because of issues.</entry>
-      <entry>Fixed a bug in the string editor that could produce erroneous results for certain dialog.tlks.</entry>
-      <entry>Fixed a compiler bug that decoded script actions incorrectly after opening a new games.</entry>
-      <entry>Restored auto-adding resource from a "Add Copy Of" operation to resource tree.</entry>
-      <entry>ARE Actor flags bit 3 (Override Script Name) is supported by IWD2.</entry>
+      <entry>Improved autodetection of text encoding in non-Enhanced games. It's currently working for western languages and Polish.</entry>
+      <entry>Area viewer provides overhead icon labels which can be controlled via global viewer settings.</entry>
+      <entry>Updated various resource type fields.</entry>
+      <entry>Updated several opcode parameters.</entry>
+      <entry>Fixed an OSX-specific bug that prevented saving current application settings when using shortcut command-Q.</entry>
+      <entry>Applied hotfix for "Undo" button in DLG viewer.</entry>
+      <entry>Several internal fixes.</entry>
     </changelog>
   </release>
 
