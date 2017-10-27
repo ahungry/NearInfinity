@@ -23,20 +23,34 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20170907/NearInfinity-20170907.zip</url>
-      <version>v2.1-20170907</version>
-      <timestamp>2017-09-07T14:54+02:00</timestamp>
-      <hash>1c05935a7ab60e40c5fadbfb8e2fe4fe</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20170907</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20171027/NearInfinity-20171027.zip</url>
+      <version>v2.1-20171027</version>
+      <timestamp>2017-10-27T15:01+02:00</timestamp>
+      <hash>114a9aa5c257467b63e1ebfa018be8ab</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20171027</link>
     </file>
     <changelog>
-      <entry>Improved autodetection of text encoding in non-Enhanced games. It's currently working for western languages and Polish.</entry>
-      <entry>Area viewer provides overhead icon labels which can be controlled via global viewer settings.</entry>
-      <entry>Updated various resource type fields.</entry>
-      <entry>Updated several opcode parameters.</entry>
-      <entry>Fixed an OSX-specific bug that prevented saving current application settings when using shortcut command-Q.</entry>
-      <entry>Applied hotfix for "Undo" button in DLG viewer.</entry>
-      <entry>Several internal fixes.</entry>
+      <entry>BAM Converter: Set a default output name automatically.</entry>
+      <entry>BAM Converter: Add a list of recently used BAM sessions for quick access.</entry>
+      <entry>BAM Converter: Improved feedback if an export operation failed.</entry>
+      <entry>BAM Converter: Added filter category to filter names.</entry>
+      <entry>BAM Converter: Added new transform filter "Center BAM frames".</entry>
+      <entry>BAM Converter: Added new output filter "GIF output".</entry>
+      <entry>BAM Converter: Added new output filter "Image output".</entry>
+      <entry>Updated some CRE fields and flag labels.</entry>
+      <entry>Added SPL primary type (school) 'Wild Mage'.</entry>
+      <entry>Updated 'Special' field for opcodes 25, 39, 98 and 213.</entry>
+      <entry>ARE &gt; Song &gt; Reverb uses entries from REVERB.2DA if available.</entry>
+      <entry>Turned list of script states for opcode 282 (Modify script state) into a static list.</entry>
+      <entry>Improved color value selection controls used by opcode 7 (Set color) or 342 (Override creature data).</entry>
+      <entry>Resource types VEF and VVC should not be available for PRO > Area effect > Spread/Ring animation fields.</entry>
+      <entry>Removed BMP type from ITM description image field (not used anymore by recent game patch versions).</entry>
+      <entry>Improved ARE resource reader to prevent errors if Song or Rest Encounter structures are missing.</entry>
+      <entry>Wild Mage kit id won't be displayed as negative value in resource fields anymore.</entry>
+      <entry>Fixed incorrect order when copying and pasting multiple removable structures at once.</entry>
+      <entry>Fixed opcode 140 projectile references being off by 1.</entry>
+      <entry>Fixed auto-comments for several script actions and triggers.</entry>
+      <entry>Many more internal fixes and improvements.</entry>
     </changelog>
   </release>
 
