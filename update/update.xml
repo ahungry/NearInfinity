@@ -23,15 +23,22 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20171027-rev2/NearInfinity-20171027-rev2.zip</url>
-      <version>v2.1-20171027-rev2</version>
-      <timestamp>2017-10-27T21:40+02:00</timestamp>
-      <hash>f8375477ffc999fb1eff20e44cbe0652</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20171027-rev2</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20171124/NearInfinity-20171124.zip</url>
+      <version>v2.1-20171124</version>
+      <timestamp>2017-11-24T16:50+01:00</timestamp>
+      <hash>99d2242adebbbf85f38f7d394e7ecca3</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20171124</link>
     </file>
     <changelog>
-      <entry>Fixed a serious regression that resulted in empty IDS reference lists.</entry>
-      <entry>Bam Converter: Fixed incorrectly imported center position in transform filter 'Center BAM frames'.</entry>
+      <entry>Added option to scale the default font sizes of UI controls, which should improve usability on high DPI monitors.</entry>
+      <entry>Switched color selection control, as used by creature colors or effect opcode 7 (Set Color), from slider to list.</entry>
+      <entry>Area Viewer: Use individual color shades for different region types (trap, info, travel).</entry>
+      <entry>BAM Converter: Resize filter supports scaling along individual axes.</entry>
+      <entry>Improved description of PRO area flag labels regarding target selection.</entry>
+      <entry>Improved icon display of SPL and ITM resources in Viewer tab.</entry>
+      <entry>Reference search should ignore empty CRE script names.</entry>
+      <entry>Fixed a bug that prevented BALDUR.SAV files from being compressed if they contained empty files.</entry>
+      <entry>Various internal fixes and optimizations.</entry>
     </changelog>
   </release>
 
