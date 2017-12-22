@@ -23,22 +23,22 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20171124/NearInfinity-20171124.zip</url>
-      <version>v2.1-20171124</version>
-      <timestamp>2017-11-24T16:50+01:00</timestamp>
-      <hash>99d2242adebbbf85f38f7d394e7ecca3</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20171124</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20171222/NearInfinity-20171222.zip</url>
+      <version>v2.1-20171222</version>
+      <timestamp>2017-12-22T17:43+01:00</timestamp>
+      <hash>081736259ee248115115c3dff16af672</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20171222</link>
     </file>
     <changelog>
-      <entry>Added option to scale the default font sizes of UI controls, which should improve usability on high DPI monitors.</entry>
-      <entry>Switched color selection control, as used by creature colors or effect opcode 7 (Set Color), from slider to list.</entry>
-      <entry>Area Viewer: Use individual color shades for different region types (trap, info, travel).</entry>
-      <entry>BAM Converter: Resize filter supports scaling along individual axes.</entry>
-      <entry>Improved description of PRO area flag labels regarding target selection.</entry>
-      <entry>Improved icon display of SPL and ITM resources in Viewer tab.</entry>
-      <entry>Reference search should ignore empty CRE script names.</entry>
-      <entry>Fixed a bug that prevented BALDUR.SAV files from being compressed if they contained empty files.</entry>
-      <entry>Various internal fixes and optimizations.</entry>
+      <entry>Cut/copy and paste operations automatically convert EFF V1.0 structures into EFF V2.0 and vice versa if needed.</entry>
+      <entry>Area Viewer: Added setting to disable individual region shades.</entry>
+      <entry>Area Viewer: Added option to specify a custom map zoom factor. Select "Custom" from the combobox list.</entry>
+      <entry>Area Viewer: Containers, doors and regions provide additional info in quick info box and tooltips.</entry>
+      <entry>List of codes for CRE > Equipped appearance is determined dynamically based on available game resources.</entry>
+      <entry>Extended "Edit as string" option from popup menu for CRE > Equipped appearance field.</entry>
+      <entry>Added ITM to allowed resource types for opcodes 258, 260, 318, 321 and 324.</entry>
+      <entry>Updated several field names in EFF V2.0 structures.</entry>
+      <entry>Some internal optimizations.</entry>
     </changelog>
   </release>
 
