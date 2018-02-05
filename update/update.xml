@@ -23,22 +23,26 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20171222/NearInfinity-20171222.zip</url>
-      <version>v2.1-20171222</version>
-      <timestamp>2017-12-22T17:43+01:00</timestamp>
-      <hash>081736259ee248115115c3dff16af672</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20171222</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20180205/NearInfinity-20180205.zip</url>
+      <version>v2.1-20180205</version>
+      <timestamp>2018-02-05T20:27+01:00</timestamp>
+      <hash>138e9a0fdc21063e0f9f9abdcddd8fcd</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20180205</link>
     </file>
     <changelog>
-      <entry>Cut/copy and paste operations automatically convert EFF V1.0 structures into EFF V2.0 and vice versa if needed.</entry>
-      <entry>Area Viewer: Added setting to disable individual region shades.</entry>
-      <entry>Area Viewer: Added option to specify a custom map zoom factor. Select "Custom" from the combobox list.</entry>
-      <entry>Area Viewer: Containers, doors and regions provide additional info in quick info box and tooltips.</entry>
-      <entry>List of codes for CRE > Equipped appearance is determined dynamically based on available game resources.</entry>
-      <entry>Extended "Edit as string" option from popup menu for CRE > Equipped appearance field.</entry>
-      <entry>Added ITM to allowed resource types for opcodes 258, 260, 318, 321 and 324.</entry>
-      <entry>Updated several field names in EFF V2.0 structures.</entry>
-      <entry>Some internal optimizations.</entry>
+      <entry>Added option to create zip archives of saved games to the context menu.</entry>
+      <entry>Added option to toggle visibility of icon labels in WMP view tab.</entry>
+      <entry>Added option to export WMP map as PNG, including selected overlays.</entry>
+      <entry>Added PST/PSTEE-specific CRE color support.</entry>
+      <entry>Improved list of color location descriptions, used by various opcodes, to be more modder-friendly.</entry>
+      <entry>Unhardcoded color field labels for CRE resources in PSTEE.</entry>
+      <entry>Show symbolic names in color fields when available.</entry>
+      <entry>Tools > Check for unused files: Added BAM to list of resource types.</entry>
+      <entry>Updated opcode 32 (Raise Dead).</entry>
+      <entry>Updated PRO behavior flags.</entry>
+      <entry>Fixed ground icon not always being displayed in ITM view tab.</entry>
+      <entry>Fixed not setting correct compression type for Tools > Convert Image to MOS (V2).</entry>
+      <entry>Fixed a bug in the script decompiler concerning actions with multiple signatures.</entry>
     </changelog>
   </release>
 
