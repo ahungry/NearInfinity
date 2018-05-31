@@ -23,26 +23,33 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20180205/NearInfinity-20180205.zip</url>
-      <version>v2.1-20180205</version>
-      <timestamp>2018-02-05T20:27+01:00</timestamp>
-      <hash>138e9a0fdc21063e0f9f9abdcddd8fcd</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20180205</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20180531/NearInfinity-20180531.zip</url>
+      <version>v2.1-20180531</version>
+      <timestamp>2018-05-31T11:14+01:00</timestamp>
+      <hash>9b2f45f11bb08df9aed8b975a00aef5d</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20180531</link>
     </file>
     <changelog>
-      <entry>Added option to create zip archives of saved games to the context menu.</entry>
-      <entry>Added option to toggle visibility of icon labels in WMP view tab.</entry>
-      <entry>Added option to export WMP map as PNG, including selected overlays.</entry>
-      <entry>Added PST/PSTEE-specific CRE color support.</entry>
-      <entry>Improved list of color location descriptions, used by various opcodes, to be more modder-friendly.</entry>
-      <entry>Unhardcoded color field labels for CRE resources in PSTEE.</entry>
-      <entry>Show symbolic names in color fields when available.</entry>
-      <entry>Tools > Check for unused files: Added BAM to list of resource types.</entry>
-      <entry>Updated opcode 32 (Raise Dead).</entry>
-      <entry>Updated PRO behavior flags.</entry>
-      <entry>Fixed ground icon not always being displayed in ITM view tab.</entry>
-      <entry>Fixed not setting correct compression type for Tools > Convert Image to MOS (V2).</entry>
-      <entry>Fixed a bug in the script decompiler concerning actions with multiple signatures.</entry>
+      <entry>Added support for pseudo-stat "Current HP" to SPLPROT.2DA.</entry>
+      <entry>Added option to view current WeiDU.log in NI (menu Edit > WeiDU.log).</entry>
+      <entry>Defined a custom syntax highlighter for WeiDU.log viewer.</entry>
+      <entry>Edit tab in structured resources: Increased default text length for previewing substructure info.</entry>
+      <entry>Added option to keep current resource selection after a "Add copy of" action.</entry>
+      <entry>CRE: Added spell type column to View tab > Items/Spells > Memorized Spells.</entry>
+      <entry>Updated available resource types for a number of fields in PRO resources.</entry>
+      <entry>Improved various ARE flag descriptions.</entry>
+      <entry>Updated SPL flags bit 9 (Break Sanctuary).</entry>
+      <entry>Marked EFF resource type as supported in IWD2.</entry>
+      <entry>Fixed visualization of travel distances on worldmap.</entry>
+      <entry>EE: Added resource type SPL to opcodes 201, 226, 227, 228, 259.</entry>
+      <entry>EE: Added resource types VEF/VVC/BAM to opcode 68.</entry>
+      <entry>EE: Updated resource types for opcodes 153, 154, 155, 156, 157 and 158.</entry>
+      <entry>EE: Added new param2 option "All, magical only" to opcode 145 (Disable spellcasting).</entry>
+      <entry>EE: Added new param2 option "Increment instantaneously" to opcodes 33, 34, 35, 36, 37 and 325.</entry>
+      <entry>IWD2: Fixed param2 IDS list of opcode 177.</entry>
+      <entry>Area viewer: Added option to include layer controls in map export.</entry>
+      <entry>Area viewer: Added option to change zoom level by mouse wheel.</entry>
+      <entry>Area viewer: Fixed a regression that would detect auto-zoom as a fixed "custom" zoom.</entry>
     </changelog>
   </release>
 
