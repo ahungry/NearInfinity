@@ -23,33 +23,24 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20180531/NearInfinity-20180531.zip</url>
-      <version>v2.1-20180531</version>
-      <timestamp>2018-05-31T15:01+01:00</timestamp>
-      <hash>98ee4a7677f197221aad39bf1d8947d8</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20180531</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20180615/NearInfinity-20180615.zip</url>
+      <version>v2.1-20180615</version>
+      <timestamp>2018-06-15T13:56+01:00</timestamp>
+      <hash>1c880fdd82a4507aee31f69bc1404324</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20180615</link>
     </file>
     <changelog>
-      <entry>Added support for pseudo-stat "Current HP" to SPLPROT.2DA.</entry>
-      <entry>Added option to view current WeiDU.log in NI (menu Edit > WeiDU.log).</entry>
-      <entry>Defined a custom syntax highlighter for WeiDU.log viewer.</entry>
-      <entry>Edit tab in structured resources: Increased default text length for previewing substructure info.</entry>
-      <entry>Added option to keep current resource selection after a "Add copy of" action.</entry>
-      <entry>CRE: Added spell type column to View tab > Items/Spells > Memorized Spells.</entry>
-      <entry>Updated available resource types for a number of fields in PRO resources.</entry>
-      <entry>Improved various ARE flag descriptions.</entry>
-      <entry>Updated SPL flags bit 9 (Break Sanctuary).</entry>
-      <entry>Marked EFF resource type as supported in IWD2.</entry>
-      <entry>Fixed visualization of travel distances on worldmap.</entry>
-      <entry>EE: Added resource type SPL to opcodes 201, 226, 227, 228, 259.</entry>
-      <entry>EE: Added resource types VEF/VVC/BAM to opcode 68.</entry>
-      <entry>EE: Updated resource types for opcodes 153, 154, 155, 156, 157 and 158.</entry>
-      <entry>EE: Added new param2 option "All, magical only" to opcode 145 (Disable spellcasting).</entry>
-      <entry>EE: Added new param2 option "Increment instantaneously" to opcodes 33, 34, 35, 36, 37 and 325.</entry>
-      <entry>IWD2: Fixed param2 IDS list of opcode 177.</entry>
-      <entry>Area viewer: Added option to include layer controls in map export.</entry>
-      <entry>Area viewer: Added option to change zoom level by mouse wheel.</entry>
-      <entry>Area viewer: Fixed a regression that would detect auto-zoom as a fixed "custom" zoom.</entry>
+      <entry>BAM Converter: Added alpha palette support. Enabled for games that support BAM with alpha palette.</entry>
+      <entry>BAM Converter: Improved visualization of palette in BAM palette dialog.</entry>
+      <entry>BAM Converter: Added a global palette sorting option.</entry>
+      <entry>BAM Converter: Fixed various color filters to work correctly with alpha-blended BAM frames.</entry>
+      <entry>BAM Converter: Improved GIF import function. It should now correctly handle more advanced structures in animated GIFs.</entry>
+      <entry>Improved alpha palette support in BAM decoder.</entry>
+      <entry>Overhauled color reduction functionality: Improves visual quality of converted palette-based BAM, MOS and TIS files.</entry>
+      <entry>Added a button to ARE > Actor > Animation field for opening creature animation definition files of selected type, if available.</entry>
+      <entry>Added missing field "First letter of CRE resref" to ARE > Actor structure.</entry>
+      <entry>Removed fields from GAM NPC substructures that are not used by the games.</entry>
+      <entry>Fixed area-related field labels in GAM structure.</entry>
     </changelog>
   </release>
 
