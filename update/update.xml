@@ -23,24 +23,57 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20180615/NearInfinity-20180615.zip</url>
-      <version>v2.1-20180615</version>
-      <timestamp>2018-06-15T13:56+01:00</timestamp>
-      <hash>1c880fdd82a4507aee31f69bc1404324</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20180615</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200401/NearInfinity-20200401.zip</url>
+      <version>v2.1-20200401</version>
+      <timestamp>2020-04-01T09:56+01:00</timestamp>
+      <hash>a1328d7a317a461b55d40e5b14eb22d1</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200401</link>
     </file>
     <changelog>
-      <entry>BAM Converter: Added alpha palette support. Enabled for games that support BAM with alpha palette.</entry>
-      <entry>BAM Converter: Improved visualization of palette in BAM palette dialog.</entry>
-      <entry>BAM Converter: Added a global palette sorting option.</entry>
-      <entry>BAM Converter: Fixed various color filters to work correctly with alpha-blended BAM frames.</entry>
-      <entry>BAM Converter: Improved GIF import function. It should now correctly handle more advanced structures in animated GIFs.</entry>
-      <entry>Improved alpha palette support in BAM decoder.</entry>
-      <entry>Overhauled color reduction functionality: Improves visual quality of converted palette-based BAM, MOS and TIS files.</entry>
-      <entry>Added a button to ARE > Actor > Animation field for opening creature animation definition files of selected type, if available.</entry>
-      <entry>Added missing field "First letter of CRE resref" to ARE > Actor structure.</entry>
-      <entry>Removed fields from GAM NPC substructures that are not used by the games.</entry>
-      <entry>Fixed area-related field labels in GAM structure.</entry>
+      <entry>Show search names of areas (if available), creatures, items, spells and stores in the resource navigation tree (thanks Mingun) &lt;- can be turned on/off in Options menu</entry>
+      <entry>Show overridden resources in bold in the resource navigation tree (thanks Mingun) &lt;- can be turned on/off in Options menu</entry>
+      <entry>Moved game-related configuration files (such as baldur.lua, WeiDU.log, ...) from Edit menu to the new "Special" folder in the resource navigation tree</entry>
+      <entry>Bookmarks: Use game name by default (thanks Mingun)</entry>
+      <entry>Copy or rename game resources: Show a default naming suggestion; allow change of extension for rename operation</entry>
+      <entry>Added script compiler option "Autogenerate BCS comments" for scripts, mass exporter and bcs drop zone</entry>
+      <entry>Improved enforcing global font size for all UI text (useful for high dpi displays)</entry>
+      <entry>BAM Converter -&gt; Splitted BAM Output: Fixed filename suffix generation</entry>
+      <entry>Mass Converter: Fixed automatic TIS V1 -&gt; V2 conversion</entry>
+      <entry>Reference Searcher: Included type MENU</entry>
+      <entry>Improved DLG checker: cover more potential issues (thanks Mingun)</entry>
+      <entry>Improved tooltips in Area Viewer: Show parent structure names or search names if available (thanks Mingun)</entry>
+      <entry>ARE -&gt; Actor View tab: Show CRE information in separate tab if available</entry>
+      <entry>Visual improvements in View tabs for ARE Container, GAM and SPL Ability structures</entry>
+      <entry>Show item ability name (from tooltip.2da) in View tab</entry>
+      <entry>Show dialog resref of conversable itemsin View tab</entry>
+      <entry>IWD2: Fixed misaligned controls and background dimension in CHU viewer</entry>
+      <entry>Added Raw tab to DLG resources (thanks Mingun)</entry>
+      <entry>Fixed various bugs in View tab of DLG resources (thanks Mingun)</entry>
+      <entry>Fixed permanent high CPU/GFX load when states or responses with script blocks are selected</entry>
+      <entry>Greatly improved dialog tree viewer (thanks Mingun)</entry>
+      <entry>Various improvements to Edit view of structured resources</entry>
+      <entry>BCS decompiler: Edge cases, such as functions with empty strings or wildcards, are decoded properly.</entry>
+      <entry>BCS decompiler: Order of signature definition in action.ids and trigger.ids have no impact on script decoding anymore</entry>
+      <entry>Added support for virtual string references via ENGINEST.2DA</entry>
+      <entry>New field in ARE -&gt; Actor structure: Alternate actor name</entry>
+      <entry>New field in GAM V2.2: Nightmare mode</entry>
+      <entry>Improved CRE field label: Undead level -&gt; Turn undead level</entry>
+      <entry>Updated SPL and ITM ability flag labels</entry>
+      <entry>Retrieve custom ITM flag labels dynamically from itemflag.ids</entry>
+      <entry>Fixed ambiguous description of spellprot stat 0x104</entry>
+      <entry>Added default entry to source item slot list in EFF V2</entry>
+      <entry>Updated STO flags</entry>
+      <entry>Updated opcodes 13, 23, 24, 25, 78, 98, 108, 109, 272, 279, 282, 290</entry>
+      <entry>IWD2: Fixed opcode 402</entry>
+      <entry>Allow negative numbers in parameter 1 of opcode 233</entry>
+      <entry>PST: Added Quest Viewer to GAM resources and Resource Tree -&gt; Special -&gt; quest.ini (thanks Mingun)</entry>
+      <entry>PST: Added custom Viewer for Bestiary structure in GAM resources (thanks Mingun)</entry>
+      <entry>Fixed priority order of override folders</entry>
+      <entry>Fixed adding removables in CHR when section offset is 0</entry>
+      <entry>Fixed reading BAM V1 resources with non-standard palette size</entry>
+      <entry>Improved BG Tutu detection</entry>
+      <entry>Various stability fixes (thanks Mingun)</entry>
+      <entry>Internal code refactoring and cleanup (thanks Mingun)</entry>
     </changelog>
   </release>
 
