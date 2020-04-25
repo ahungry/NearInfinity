@@ -23,22 +23,33 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200419/NearInfinity-20200419.zip</url>
-      <version>v2.1-20200419</version>
-      <timestamp>2020-04-19T11:33+01:00</timestamp>
-      <hash>54bd9f6031eb42a0250c14ff20cab190</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200419</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200425/NearInfinity-20200425.zip</url>
+      <version>v2.1-20200425</version>
+      <timestamp>2020-04-25T13:25+01:00</timestamp>
+      <hash>e453d825e4550ca4c7ac82e147f4cd66</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200425</link>
     </file>
     <changelog>
-      <entry>Added new feature: Advanced Search</entry>
-      <entry>Made option "Find references to this file" available from context menu of the resource tree and the File menu</entry>
-      <entry>Updated names of opcodes 318 and 324</entry>
-      <entry>Negative numbers are treated as Unknowns instead of errors for numeric fields with associated names</entry>
-      <entry>Added CHR search names in resource tree</entry>
-      <entry>Improved detection of area search names in EE 2.0+ games</entry>
-      <entry>Improved layout of area selection list in the worldmap (WMP) View tab</entry>
-      <entry>Added support for (erroneous?) CRE V9.1 resources found in IWD2</entry>
-      <entry>Several bugfixes and minor improvements</entry>
+      <entry>Added option to colorize resource structures and their associated offset and count fields</entry>
+      <entry>Advanced Search: Added feature to add selected resource fields as filter definitions</entry>
+      <entry>Advanced Search: Fixed missing import of "Match case" options for field and value definitions</entry>
+      <entry>Advanced Search: Fixed search of grouped filter definitions</entry>
+      <entry>Area Viewer: Considers overlay transparency from ARE field</entry>
+      <entry>Area Viewer: Fixed overlay rendering issues</entry>
+      <entry>Area Viewer: Fixed erroneous detection of extended night maps in PSTEE</entry>
+      <entry>BAM Converter: Fixed transparency issues with external palettes</entry>
+      <entry>BAM Converter: Added support for PNG palette in "Replace colors" filter</entry>
+      <entry>BAM Converter: Improved support of Microsoft PAL palettes</entry>
+      <entry>Changed detection of BAM transparency (uses palette index 0 and any palette indices matching RGB(0,255,0))</entry>
+      <entry>Search resource references: Improved presentation of results for textual resources (BCS, 2DA, ...)</entry>
+      <entry>Updated ARE Animation appearance and flags descriptions</entry>
+      <entry>Updated fields in GAM and GAM > NPC structures</entry>
+      <entry>Added ITM Ability flags bit 9 description</entry>
+      <entry>Further improved search names for areas in resource tree (uses names from worldmap if available)</entry>
+      <entry>Fixed bug when assigning resource references containing lower-case extensions in resource fields</entry>
+      <entry>More robust decoding of compresed BAMs containing corrupted data</entry>
+      <entry>Fix inaccessible GAM &gt; NPC structures in PST</entry>
+      <entry>Various minor bugfixes and optimizations</entry>
     </changelog>
   </release>
 
