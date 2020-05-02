@@ -23,33 +23,24 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200425/NearInfinity-20200425.zip</url>
-      <version>v2.1-20200425</version>
-      <timestamp>2020-04-25T13:25+01:00</timestamp>
-      <hash>e453d825e4550ca4c7ac82e147f4cd66</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200425</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200502/NearInfinity-20200502.zip</url>
+      <version>v2.1-20200502</version>
+      <timestamp>2020-05-02T10:55+01:00</timestamp>
+      <hash>78dc01b88f77ef814c4ff6a49e060c88</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200502</link>
     </file>
     <changelog>
-      <entry>Added option to colorize resource structures and their associated offset and count fields</entry>
-      <entry>Advanced Search: Added feature to add selected resource fields as filter definitions</entry>
-      <entry>Advanced Search: Fixed missing import of "Match case" options for field and value definitions</entry>
-      <entry>Advanced Search: Fixed search of grouped filter definitions</entry>
-      <entry>Area Viewer: Considers overlay transparency from ARE field</entry>
-      <entry>Area Viewer: Fixed overlay rendering issues</entry>
-      <entry>Area Viewer: Fixed erroneous detection of extended night maps in PSTEE</entry>
-      <entry>BAM Converter: Fixed transparency issues with external palettes</entry>
-      <entry>BAM Converter: Added support for PNG palette in "Replace colors" filter</entry>
-      <entry>BAM Converter: Improved support of Microsoft PAL palettes</entry>
-      <entry>Changed detection of BAM transparency (uses palette index 0 and any palette indices matching RGB(0,255,0))</entry>
-      <entry>Search resource references: Improved presentation of results for textual resources (BCS, 2DA, ...)</entry>
-      <entry>Updated ARE Animation appearance and flags descriptions</entry>
-      <entry>Updated fields in GAM and GAM > NPC structures</entry>
-      <entry>Added ITM Ability flags bit 9 description</entry>
-      <entry>Further improved search names for areas in resource tree (uses names from worldmap if available)</entry>
-      <entry>Fixed bug when assigning resource references containing lower-case extensions in resource fields</entry>
-      <entry>More robust decoding of compresed BAMs containing corrupted data</entry>
-      <entry>Fix inaccessible GAM &gt; NPC structures in PST</entry>
-      <entry>Various minor bugfixes and optimizations</entry>
+      <entry>Added PRO search names to resource selection tree</entry>
+      <entry>Added INI search names to resource selection tree</entry>
+      <entry>Structured resources: Added new 'Size' column and option to display size in decimal or hexadecimal notation</entry>
+      <entry>Structured resources: Added option to show relative offsets of fields in substructures</entry>
+      <entry>Improved readability of CRE Status flags</entry>
+      <entry>Description text of unknown flags are drawn in lighter colors to emphasize known flags</entry>
+      <entry>Fixed jumping to correct DLG state/trigger entries from a reference search</entry>
+      <entry>Fixed StringRef Lookup not passing the correct strref value to the string editor when clicking the "Edit" button</entry>
+      <entry>Fixed WMP worldmap loading error if referenced resources are missing</entry>
+      <entry>Updated external libraries used for displaying textual content</entry>
+      <entry>Various minor fixes and optimizations</entry>
     </changelog>
   </release>
 
