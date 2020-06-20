@@ -23,24 +23,25 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200502/NearInfinity-20200502.zip</url>
-      <version>v2.1-20200502</version>
-      <timestamp>2020-05-02T10:55+01:00</timestamp>
-      <hash>78dc01b88f77ef814c4ff6a49e060c88</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200502</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200620/NearInfinity-20200620.zip</url>
+      <version>v2.1-20200620</version>
+      <timestamp>2020-06-20T17:38+01:00</timestamp>
+      <hash>bd2dc1b8aad66e2f908a9c2252cbb7e2</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200620</link>
     </file>
     <changelog>
-      <entry>Added PRO search names to resource selection tree</entry>
-      <entry>Added INI search names to resource selection tree</entry>
-      <entry>Structured resources: Added new 'Size' column and option to display size in decimal or hexadecimal notation</entry>
-      <entry>Structured resources: Added option to show relative offsets of fields in substructures</entry>
-      <entry>Improved readability of CRE Status flags</entry>
-      <entry>Description text of unknown flags are drawn in lighter colors to emphasize known flags</entry>
-      <entry>Fixed jumping to correct DLG state/trigger entries from a reference search</entry>
-      <entry>Fixed StringRef Lookup not passing the correct strref value to the string editor when clicking the "Edit" button</entry>
-      <entry>Fixed WMP worldmap loading error if referenced resources are missing</entry>
-      <entry>Updated external libraries used for displaying textual content</entry>
-      <entry>Various minor fixes and optimizations</entry>
+      <entry>Fixed structure order in empty SPL or ITM resources when adding abilities or effects</entry>
+      <entry>Added option to align content in 2DA tables</entry>
+      <entry>Long strings in View tabs are cut off to prevent out-of-bounds UI elements</entry>
+      <entry>Improved ARE View tab layout to prevent out-of-bounds scrolling</entry>
+      <entry>Updating CRE effect version (offset 33h) converts effect structures on the fly between EFF V1 and EFF V2 format</entry>
+      <entry>String Editor: Fixed saving changes of read-only dialog.tlk (e.g. in DLC archive) to another location</entry>
+      <entry>Advanced Search > Filter > Structure level: Made root element unremovable</entry>
+      <entry>BAM Converter: Fixed incorrect cycle data imported from a session file</entry>
+      <entry>BAM Converter: Fixed display issues in palette dialogs on Linux systems</entry>
+      <entry>List of available primary types (spell schools) in opcodes 202, 204, 220, 223, 227, 229 are created dynamically from mschool.2da</entry>
+      <entry>Implemented TobEx feature "Effect stacking": new flag in save types, EFF 'special' field is splitted into 'identifier' and 'prefix' fields</entry>
+      <entry>Fixed CHR to CRE conversion</entry>
     </changelog>
   </release>
 
