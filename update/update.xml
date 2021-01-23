@@ -23,21 +23,24 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20200901/NearInfinity-20200901.zip</url>
-      <version>v2.1-20200901</version>
-      <timestamp>2020-09-01T12:05+01:00</timestamp>
-      <hash>dbd13b06e2e4d8c300953fa1fb17098a</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20200901</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20210123/NearInfinity-20210123.zip</url>
+      <version>v2.1-20210123</version>
+      <timestamp>2021-01-23T13:44+01:00</timestamp>
+      <hash>43d9906acd25382c48c82dc1ce1417f7</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20210123</link>
     </file>
     <changelog>
-      <entry>Added feature to launch the game directly from NI</entry>
-      <entry>Improved NI loading times by optimizing various I/O operations</entry>
-      <entry>Added filter feature to listbox datatypes for structured resources</entry>
-      <entry>Added "Properties" button to TTF resource viewer</entry>
-      <entry>Added tooltip descriptions for Options > Look and Feel themse</entry>
-      <entry>Fixed minor display issues with transparent pixels in worldmap viewer (should only affect PST:EE)</entry>
-      <entry>Removed (functionless) "Release Dialog.tlk Lock" entry from Game menu</entry>
-      <entry>Various bugfixes and optimizations</entry>
+      <entry>Fixed ITM/SPL file corruption when appending Ability structures</entry>
+      <entry>Added EEex support (thanks Bubb)</entry>
+      <entry>Added option to sort IDS entries (found under "Format..." button &gt; "Sort entries")</entry>
+      <entry>Show a game selection dialog if game is not detected automatically by NI</entry>
+      <entry>Improved handling of dialog.tlk when it's blocked by a running game</entry>
+      <entry>Updated various effect opcodes</entry>
+      <entry>Made list of available opcodes more game-specific</entry>
+      <entry>EFF V2.0: added more bits to "Dispel/Resist" field</entry>
+      <entry>EFF V2.0: changed "Dispel/Resist" field from list to flags</entry>
+      <entry>Improved save type flags descriptions</entry>
+      <entry>Internal fixes and optimizations</entry>
     </changelog>
   </release>
 
