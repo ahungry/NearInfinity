@@ -15,7 +15,7 @@
       <link>http://forum.baldursgate.com/discussion/30593/new-versions-of-nearinfinity-available/</link>
     </info>
     <info>
-      <name>AstroBryGuy's Mac OS X specific app packages of Near Infinity</name>
+      <name>AstroBryGuy's Mac OS X specific app packages of Near Infinity (outdated)</name>
       <link>https://github.com/AstroBryGuy/NearInfinity-OSX/releases</link>
     </info>
   </general>
@@ -23,24 +23,42 @@
   <release type="latest">
     <file>
       <name>NearInfinity.jar</name>
-      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.1-20210123/NearInfinity-20210123.zip</url>
-      <version>v2.1-20210123</version>
-      <timestamp>2021-01-23T13:44+01:00</timestamp>
-      <hash>43d9906acd25382c48c82dc1ce1417f7</hash>
-      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.1-20210123</link>
+      <url type="zip">https://github.com/Argent77/NearInfinity/releases/download/v2.2-20210501/NearInfinity-20210501.zip</url>
+      <version>v2.2-20210501</version>
+      <timestamp>2021-05-01T09:54+01:00</timestamp>
+      <hash>e4a7dbac494edcd37e9749245c333deb</hash>
+      <link>https://github.com/Argent77/NearInfinity/releases/tag/v2.2-20210501</link>
     </file>
     <changelog>
-      <entry>Fixed ITM/SPL file corruption when appending Ability structures</entry>
-      <entry>Added EEex support (thanks Bubb)</entry>
-      <entry>Added option to sort IDS entries (found under "Format..." button &gt; "Sort entries")</entry>
-      <entry>Show a game selection dialog if game is not detected automatically by NI</entry>
-      <entry>Improved handling of dialog.tlk when it's blocked by a running game</entry>
-      <entry>Updated various effect opcodes</entry>
-      <entry>Made list of available opcodes more game-specific</entry>
-      <entry>EFF V2.0: added more bits to "Dispel/Resist" field</entry>
-      <entry>EFF V2.0: changed "Dispel/Resist" field from list to flags</entry>
-      <entry>Improved save type flags descriptions</entry>
-      <entry>Internal fixes and optimizations</entry>
+      <entry>New feature "Creature Animation Decoding": Implemented as a creature animation browser, a quick viewer and creature animation support in the Area Viewer</entry>
+      <entry>Area Viewer: Show global characters on maps (e.g. party members, familiars, potential NPCs)</entry>
+      <entry>Area Viewer: Fixed actors sometimes not being displayed on maps in saved games</entry>
+      <entry>Area Viewer: Fixed rendering issues with water overlays in BGEE</entry>
+      <entry>Improved color selection list control used by color-related opcodes and CRE resource fields</entry>
+      <entry>List datatype: CRE animation id is shown in hexadecimal notation</entry>
+      <entry>List datatype: Fixed special entries in ARE song selection</entry>
+      <entry>List datatype: Optimized display of unsupported list entries</entry>
+      <entry>Added new command line parameter "-i" as a workaround for file reading issues on Linux with non-case-sensitive filesystems</entry>
+      <entry>BAM Converter: Improved palette generation for BAM V1 when alpha blending is enabled</entry>
+      <entry>Fixed loading performance of PVRZ-based graphics files if PVRZ files are read from override folder (affects TIS/MOS/BAM resource viewers and Area Viewer)</entry>
+      <entry>ARE automap notes: marker color field uses values from MAPNOTES.IDS if available</entry>
+      <entry>Marked several SPL fields as unused</entry>
+      <entry>Updated PRO area effect fields related to "Ray count"</entry>
+      <entry>Updated SPL V2.0 flags</entry>
+      <entry>Added missing "Half-Orc" to ITM V2.0 kit usability flags</entry>
+      <entry>ITM V2.0 kit usability1 is generated dynamically (experimental feature)</entry>
+      <entry>ITM V1.1 weapon color field improvement</entry>
+      <entry>ITM view panel shows both general and identified descriptions (if available)</entry>
+      <entry>Improved wording of STO flags descriptions</entry>
+      <entry>BAM view uses 0-based indices for cycles and frames</entry>
+      <entry>Improved usability of input control for setting proficiency values</entry>
+      <entry>Added parameter2 support (Color) to opcode 253</entry>
+      <entry>Improved opcode 12 special flags descriptions</entry>
+      <entry>Improved opcode 232 parameter descriptions</entry>
+      <entry>Minor adjustments to CRE V2.2 field definitions</entry>
+      <entry>Fixed corruption of CRE V2.2 resources when adding/removing effect or item structures</entry>
+      <entry>Fixed parameter1 handling when parameter2 = 3 in opcode 15 and 44</entry>
+      <entry>Many internal fixes and optimizations</entry>
     </changelog>
   </release>
 
