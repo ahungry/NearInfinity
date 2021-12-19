@@ -14,6 +14,7 @@ let offset = 8
 const entries = {}
 
 function get_entry (buf, offset) {
+  const initial_offset = offset
   const dv = new DataView(buf.buffer)
   const fileNameLength = dv.getInt32(offset, 1) // little endian, tricky
   offset += 4
@@ -35,9 +36,11 @@ function get_entry (buf, offset) {
 
   return {
     cdata,
+    cdata_begin_offset: offset - compressedLength,
     compressedLength,
     fileName,
-    offset,
+    initial_offset,
+    offset, // ending offset
     uncompressedLength,
   }
 }
@@ -114,11 +117,17 @@ const newCdata = zlib.deflateSync(sortedBag.sortedEntry)
 console.log(bagInfo)
 console.log(newCdata.length)
 
+console.log(newCdata)
+console.log(bagInfo.cdata)
+
 // Try to add newCdata in place of old
+// TODO: Likely will need to update this in place, but due to compression alteration
+// after writing this cdata, update the cdata compressed length value, and then
+// ensure the original buf data afterwards is put in the proper place (shift diff)
 function updateCdata (entry, newCdata) {
   console.log(entry)
-  for (let i = entry.offset; i < entry.offset + entry.compressedLength; i++) {
-    buf[i] = newCdata[i]
+  for (let i = entry.cdata_begin_offset; i < entry.cdata_begin_offset + entry.compressedLength; i++) {
+    buf[i] = newCdata[i] || 0
   }
 }
 
