@@ -55,27 +55,57 @@ while (offset < buf.length) {
 // console.log(header)
 // console.log(entries)
 
-function show_bag(key) {
+function sort_bag(key) {
   const x = entries[key].cdata
   const z = zlib.inflateSync(x)
 
   // First 8 of a store = type or something
-  const zheader = z.slice(0, 8).toString('ascii')
-
-  // const fh = fs.openSync('test.sto', 'w')
-  // fs.writeSync(fh, z, 0, z.length, 0)
+  // const zheader = z.slice(0, 8).toString('ascii')
 
   // Item gets 28 bytes - store offset is at 147
   // Ending padding is offset is 144 + 4 extra, hmm..
   console.log(z.slice(0x90 + 12, 0x90 + 12 + 28).toString('ascii'))
   console.log(z.slice(156, 156 + 28).toString('ascii'))
 
-  for (let i = 156; i < z.length - 148; i += 28) {
-    console.log(z.slice(i, i+28).toString('ascii'))
-    // console.log(z.slice(i, i+28))
+  const offsetStart = 156
+  const offsetEnd = 148
+  const itemSize = 28
+  const items = []
+
+  for (let i = offsetStart; i < z.length - offsetEnd; i += itemSize) {
+    const item = z.slice(i, i + itemSize)
+
+    items.push({ bytes: item, name: item.toString('ascii') })
   }
+
+  const sorted = items.sort((a, b) => a.bytes.slice(0, 8) > b.bytes.slice(0, 8) ? 1 : -1)
+
+  console.log(sorted)
+
+  const sortedEntry = Buffer.from(z)
+  console.log(sortedEntry)
+
+  // Add values from our sorted in here
+  for (let i = offsetStart, c = 0; i < z.length - offsetEnd; i += itemSize, c++) {
+    const item = sorted[c] // grab the item from this iteration
+    const bytes = item.bytes // should be 28 here
+
+    for (let x = 0; x < 28; x++) {
+      sortedEntry[i + x] = bytes[x]
+    }
+  }
+
+  return { unsortedEntry: z, sortedEntry }
 }
 
-show_bag('THBAG05.sto')
-show_bag('THBAG03.sto')
-show_bag('THBAG01.sto')
+const test = sort_bag('THBAG05.sto')
+// sort_bag('THBAG03.sto')
+// sort_bag('THBAG01.sto')
+
+let fh = fs.openSync('test_unsorted.sto', 'w')
+fs.writeSync(fh, test.unsortedEntry, 0, test.unsortedEntry.length, 0)
+fs.closeSync(fh)
+
+fh = fs.openSync('test_sorted.sto', 'w')
+fs.writeSync(fh, test.sortedEntry, 0, test.sortedEntry.length, 0)
+fs.closeSync(fh)
