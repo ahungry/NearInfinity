@@ -113,19 +113,28 @@ const sortedBag = sort_bag('THBAG05.sto')
 // entries contains the broken up contents in memory
 // we can fetch/sort a bag easily enough
 const bagInfo = entries['THBAG05.sto']
-const newCdata = zlib.deflateSync(sortedBag.sortedEntry)
+const newCdata = zlib.deflateSync(sortedBag.sortedEntry, { level: 9 })
 console.log(bagInfo)
 console.log(newCdata.length)
 
-console.log(newCdata)
-console.log(bagInfo.cdata)
+// console.log(newCdata)
+// console.log(bagInfo.cdata)
+
+
+// BEGIN testing of compression levels -- Level 9 will provide the identical level of compression that the IE is using
+// const m = entries['THBAG05.sto']
+// const x = entries['THBAG05.sto'].cdata
+// const z = zlib.inflateSync(x)
+// const y = zlib.deflateSync(z, { level: 9 })
+// console.log({ m,x,y,z, xlen: x.length, ylen: y.length, zlen: z.length })
+// END testing of compression levels
 
 // Try to add newCdata in place of old
 // TODO: Likely will need to update this in place, but due to compression alteration
 // after writing this cdata, update the cdata compressed length value, and then
 // ensure the original buf data afterwards is put in the proper place (shift diff)
 function updateCdata (entry, newCdata) {
-  console.log(entry)
+  // console.log(entry)
   for (let i = entry.cdata_begin_offset; i < entry.cdata_begin_offset + entry.compressedLength; i++) {
     buf[i] = newCdata[i] || 0
   }
@@ -138,6 +147,6 @@ updateCdata(bagInfo, newCdata)
 
 // Also, the size of deflate vs compressedLengths do not match up
 
-// const fh = fs.openSync('hax.sav', 'w')
-// fs.writeSync(fh, buf, 0, buf.length, 0)
-// fs.closeSync(fh)
+const fh = fs.openSync('hax.sav', 'w')
+fs.writeSync(fh, buf, 0, buf.length, 0)
+fs.closeSync(fh)
