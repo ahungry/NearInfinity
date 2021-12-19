@@ -263,6 +263,11 @@ public final class NearInfinity extends JFrame implements ActionListener, Viewab
             break;
           }
         }
+      } else if (args[idx].equalsIgnoreCase("-s") || args[idx].equalsIgnoreCase("-sort")) {
+        System.out.println("Store Sorter (bags)\n");
+        String fileName = args[idx + 1];
+        System.out.println("The SAV file to work on is...: " + fileName + "\n");
+        System.exit(0);
       } else {
         // Override game folder via application parameter
         Path f = FileManager.resolve(args[idx]);

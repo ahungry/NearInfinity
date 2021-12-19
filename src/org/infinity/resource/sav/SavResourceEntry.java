@@ -32,16 +32,17 @@ public class SavResourceEntry extends ResourceEntry implements Writeable
   private int uncomprLength;
   private ByteBuffer cdata;
 
+  // TODO: This is the read, starting at 8 offset for the .SAV games
   public SavResourceEntry(ByteBuffer buffer, int offset)
   {
-    this.offset = offset;
-    int fileNameLength = buffer.getInt(offset);
-    fileName = StreamUtils.readString(buffer, offset + 4, fileNameLength - 1);
-    offset += 4 + fileNameLength;
-    uncomprLength = buffer.getInt(offset);
-    comprLength = buffer.getInt(offset + 4);
-    cdata = StreamUtils.getByteBuffer(comprLength);
-    StreamUtils.copyBytes(buffer, offset + 8, cdata, 0, comprLength);
+    this.offset = offset; // 8
+    int fileNameLength = buffer.getInt(offset); // read 4 bytes, turn into an int
+    fileName = StreamUtils.readString(buffer, offset + 4, fileNameLength - 1); // 4 ahead, make name
+    offset += 4 + fileNameLength; // increment ahead by that much
+    uncomprLength = buffer.getInt(offset); // again, read 4 bytes based on our new offset, new len
+    comprLength = buffer.getInt(offset + 4); // advance another 4, get compr length
+    cdata = StreamUtils.getByteBuffer(comprLength); // cdata = compressed data
+    StreamUtils.copyBytes(buffer, offset + 8, cdata, 0, comprLength); //  Put the bytes in the cdata store
   }
 
   public SavResourceEntry(ResourceEntry entry) throws Exception
@@ -169,6 +170,7 @@ public class SavResourceEntry extends ResourceEntry implements Writeable
     return -1L;
   }
 
+  // This is the important section to grab the data from
   public ByteBuffer decompress() throws Exception
   {
     Inflater inflater = new Inflater();
