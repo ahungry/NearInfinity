@@ -127,6 +127,8 @@ updateCdata(bagInfo, newCdata)
 // Well, it produces a .sav the BG game can open, but NI will crash on.
 // Also, it unfortunately doesn't seem to have altered the order of bag contents at all...
 
+// Also, the size of deflate vs compressedLengths do not match up
+
 // const fh = fs.openSync('hax.sav', 'w')
 // fs.writeSync(fh, buf, 0, buf.length, 0)
 // fs.closeSync(fh)
