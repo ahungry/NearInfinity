@@ -117,9 +117,22 @@ const newCdata = zlib.deflateSync(sortedBag.sortedEntry, { level: 9 })
 console.log(bagInfo)
 console.log(newCdata.length)
 
+console.log(bagInfo.cdata, newCdata)
+
+for (let i = 0; i < bagInfo.cdata; i++) {
+  if (bagInfo[i] !== newCdata[i]) {
+    console.log('difference/mismatch at: ', i)
+    p.exit()
+  }
+}
+console.log('they are identical...')
+
 // console.log(newCdata)
 // console.log(bagInfo.cdata)
 
+
+// Error with 'unknown compression method' - could be mismatch between labelled compressed size
+// and the actual encoding
 
 // BEGIN testing of compression levels -- Level 9 will provide the identical level of compression that the IE is using
 // const m = entries['THBAG05.sto']
@@ -135,8 +148,12 @@ console.log(newCdata.length)
 // ensure the original buf data afterwards is put in the proper place (shift diff)
 function updateCdata (entry, newCdata) {
   // console.log(entry)
-  for (let i = entry.cdata_begin_offset; i < entry.cdata_begin_offset + entry.compressedLength; i++) {
-    buf[i] = newCdata[i] || 0
+  for (let i = 0; i < entry.compressedLength; i++) {
+    buf[entry.cdata_begin_offset + i] = newCdata[i] // || 0
+    console.log({
+      buf: buf[entry.cdata_begin_offset + i],
+      new: newCdata[i]
+    })
   }
 }
 
