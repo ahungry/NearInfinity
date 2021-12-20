@@ -3,6 +3,21 @@ const fs = require('fs')
 const p = require('process')
 const zlib = require('zlib')
 
+// TODO: Look into StringTable / ResourceRef / ItmResource
+// to figure out how lang/en_US/dialog.tlk is storing full item
+// names based off of some offset from the specific key name
+const itemNames = require('./items.json')
+
+// Given a buffer with a nul terminated word, read up until first null byte
+function bufToStringNul (buf) {
+  let i = 0
+  for (; i < buf.length; i++) {
+    if (buf[i] === 0) break
+  }
+
+  return buf.slice(0, i).toString('ascii')
+}
+
 /**
  * The basic data structure used in the .sav file - 8 bytes at start identify
  * the type+version info, and the rest of the data is Entry type.
@@ -153,7 +168,17 @@ class StoreEntry extends Entry {
       items.push({ bytes: item, name: item.toString('ascii') })
     }
 
-    const sorted = items.sort((a, b) => a.bytes.slice(0, 8) > b.bytes.slice(0, 8) ? 1 : -1)
+    // TODO: Figure out how to translate the basic key used here into
+    // an actual item name, so we can do alphabetical bag order
+    const sorted = items.sort((a, b) => {
+      let sa = bufToStringNul(a.bytes.slice(0, 14))
+      let sb = bufToStringNul(b.bytes.slice(0, 14))
+
+      sa = itemNames[sa] || 'zzz' + sa
+      sb = itemNames[sb] || 'zzz' + sb
+
+      return sa > sb ? 1 : -1
+    })
 
     // console.log(sorted)
 
