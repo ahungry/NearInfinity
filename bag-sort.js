@@ -71,6 +71,7 @@ class Entry {
   }
 
   constructor ({ cdata, fileNameLen, fileName, compLen, uncompLen, sanityHeader }) {
+    console.log('a new entry was found: ' + fileName)
     this.cdata = cdata
     this.fileNameLen = fileNameLen
     this.fileName = fileName
@@ -296,8 +297,10 @@ class Entries {
 
 const entries = Entries.fromSavFile('./test.sav')
 
-entries.getOneByName('THBAG05.sto').sortItems()
+// entries.getOneByName('THBAG05.sto').sortItems()
 
-entries.toSavFile('oop.sav')
+// entries.toSavFile('oop.sav')
+
+console.log(entries.getOneByName('THBAG05.itm'))
 
 p.exit()
