@@ -150,10 +150,10 @@ function updateCdata (entry, newCdata) {
   // console.log(entry)
   for (let i = 0; i < entry.compressedLength; i++) {
     buf[entry.cdata_begin_offset + i] = newCdata[i] // || 0
-    console.log({
-      buf: buf[entry.cdata_begin_offset + i],
-      new: newCdata[i]
-    })
+    // console.log({
+    //   buf: buf[entry.cdata_begin_offset + i],
+    //   new: newCdata[i]
+    // })
   }
 }
 
