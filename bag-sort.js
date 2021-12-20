@@ -20,7 +20,7 @@ class Entry {
    * Therefore it is always 12 bytes + X bytes (fileNameSize) + Y bytes (cdata size)
    *
    */
-  static fromSavBuf (buf, offset) {
+  static fromSavBuf (buf, offset, instance = Entry) {
     const initial_offset = offset
     const dv = new DataView(buf.buffer)
     const fileNameLen = dv.getInt32(offset, 1) // little endian, tricky
@@ -45,7 +45,7 @@ class Entry {
 
     const entry = ''
 
-    return new Entry({
+    return new instance({
       cdata,
       compLen,
       fileName,
@@ -117,10 +117,75 @@ class Entry {
   }
 }
 
+class StoreEntry extends Entry {
+  constructor (m) {
+    console.log('a new store entry was found: ' + m.fileName)
+    super(m)
+  }
+
+  /**
+   * Given an entry that is of .STO (store) type, sort all the
+   * values that are in the data portion and re-pack.
+   *
+   * This involves not modifying the overall size of the thing being sorted -
+   * it will retain it's byte size, although the compressed size may change
+   * due to different compression being applicable on re-packaging
+   */
+  sortItems () {
+    const z = this.getData()
+
+    // First 8 of a store = type or something
+    // const zheader = z.slice(0, 8).toString('ascii')
+
+    // Item gets 28 bytes - store offset is at 147
+    // Ending padding is offset is 144 + 4 extra, hmm..
+    // console.log(z.slice(0x90 + 12, 0x90 + 12 + 28).toString('ascii'))
+    // console.log(z.slice(156, 156 + 28).toString('ascii'))
+
+    const offsetStart = 156
+    const offsetEnd = 148
+    const itemSize = 28
+    const items = []
+
+    for (let i = offsetStart; i < z.length - offsetEnd; i += itemSize) {
+      const item = z.slice(i, i + itemSize)
+
+      items.push({ bytes: item, name: item.toString('ascii') })
+    }
+
+    const sorted = items.sort((a, b) => a.bytes.slice(0, 8) > b.bytes.slice(0, 8) ? 1 : -1)
+
+    // console.log(sorted)
+
+    const sortedEntry = Buffer.from(z)
+    // console.log(sortedEntry)
+
+    // Add values from our sorted in here
+    for (let i = offsetStart, c = 0; i < z.length - offsetEnd; i += itemSize, c++) {
+      const item = sorted[c] // grab the item from this iteration
+      const bytes = item.bytes // should be 28 here
+
+      for (let x = 0; x < 28; x++) {
+        sortedEntry[i + x] = bytes[x]
+      }
+    }
+
+    this.setData(sortedEntry)
+
+    return sortedEntry
+  }
+}
+
 /**
  * Collection to manage entries
  */
 class Entries {
+  static fromSavFile(fileName) {
+    const buf = fs.readFileSync(fileName)
+
+    return Entries.fromSavBuf(buf)
+  }
+
   static fromSavBuf(buf) {
     const header = buf.slice(0, 8).toString('ascii')
 
@@ -134,7 +199,12 @@ class Entries {
     // Build all the entries - equivalent of the .sav file
     while (offset < buf.length) {
       // const entry = get_entry(buf, offset)
-      const entry = Entry.fromSavBuf(buf, offset)
+      let entry = Entry.fromSavBuf(buf, offset)
+
+      // More specialized resource types
+      if (/\.sto$/.test(entry.fileName)) {
+        entry = StoreEntry.fromSavBuf(buf, offset, StoreEntry)
+      }
 
       offset += entry.getSize()
 
@@ -153,7 +223,7 @@ class Entries {
     this.xs.push(x)
   }
 
-  getByName (s) {
+  getOneByName (s) {
     for (let i = 0; i < this.xs.length; i++) {
       if (this.xs[i].fileName === s) return this.xs[i]
     }
@@ -188,133 +258,21 @@ class Entries {
 
     return savBuf
   }
+
+  toSavFile (fileName) {
+    const buf = this.toSavBuf()
+    const fh = fs.openSync(fileName, 'w')
+    fs.writeSync(fh, buf, 0, buf.length, 0)
+    fs.closeSync(fh)
+
+    return this
+  }
 }
 
-/**
- * Given an entry that is of .STO (store) type, sort all the
- * values that are in the data portion and re-pack.
- */
-function sort_bag (entry) {
-  const z = entry.getData()
+const entries = Entries.fromSavFile('./test.sav')
 
-  // First 8 of a store = type or something
-  // const zheader = z.slice(0, 8).toString('ascii')
+entries.getOneByName('THBAG05.sto').sortItems()
 
-  // Item gets 28 bytes - store offset is at 147
-  // Ending padding is offset is 144 + 4 extra, hmm..
-  console.log(z.slice(0x90 + 12, 0x90 + 12 + 28).toString('ascii'))
-  console.log(z.slice(156, 156 + 28).toString('ascii'))
-
-  const offsetStart = 156
-  const offsetEnd = 148
-  const itemSize = 28
-  const items = []
-
-  for (let i = offsetStart; i < z.length - offsetEnd; i += itemSize) {
-    const item = z.slice(i, i + itemSize)
-
-    items.push({ bytes: item, name: item.toString('ascii') })
-  }
-
-  const sorted = items.sort((a, b) => a.bytes.slice(0, 8) > b.bytes.slice(0, 8) ? 1 : -1)
-
-  console.log(sorted)
-
-  const sortedEntry = Buffer.from(z)
-  console.log(sortedEntry)
-
-  // Add values from our sorted in here
-  for (let i = offsetStart, c = 0; i < z.length - offsetEnd; i += itemSize, c++) {
-    const item = sorted[c] // grab the item from this iteration
-    const bytes = item.bytes // should be 28 here
-
-    for (let x = 0; x < 28; x++) {
-      sortedEntry[i + x] = bytes[x]
-    }
-  }
-
-  entry.setData(sortedEntry)
-
-  return sortedEntry
-}
-
-const buf = fs.readFileSync('./test.sav')
-const entries = Entries.fromSavBuf(buf)
-
-const savFile = entries.toSavBuf()
-
-const xxx = fs.openSync('repack.sav', 'w')
-fs.writeSync(xxx, savFile, 0, savFile.length, 0)
-fs.closeSync(xxx)
-p.exit()
-
-const x = entries.getByName('THBAG05.sto')
-
-const newBuf = x.toCompSavBuffer()
-
-console.log(newBuf.buffer.byteLength)
-p.exit()
-const sortedBag = sort_bag(x)
-
-const fhx = fs.openSync('bag.sto', 'w')
-fs.writeSync(fhx, sortedBag, 0, sortedBag.length, 0)
-fs.closeSync(fhx)
-
+entries.toSavFile('oop.sav')
 
 p.exit()
-
-const bagInfo = entries['THBAG05.sto']
-const newCdata = zlib.deflateSync(sortedBag.sortedEntry, { level: 9 })
-console.log(bagInfo)
-console.log(newCdata.length)
-
-console.log(bagInfo.cdata, newCdata)
-
-for (let i = 0; i < bagInfo.cdata; i++) {
-  if (bagInfo[i] !== newCdata[i]) {
-    console.log('difference/mismatch at: ', i)
-    p.exit()
-  }
-}
-console.log('they are identical...')
-
-// console.log(newCdata)
-// console.log(bagInfo.cdata)
-
-
-// Error with 'unknown compression method' - could be mismatch between labelled compressed size
-// and the actual encoding
-
-// BEGIN testing of compression levels -- Level 9 will provide the identical level of compression that the IE is using
-// const m = entries['THBAG05.sto']
-// const x = entries['THBAG05.sto'].cdata
-// const z = zlib.inflateSync(x)
-// const y = zlib.deflateSync(z, { level: 9 })
-// console.log({ m,x,y,z, xlen: x.length, ylen: y.length, zlen: z.length })
-// END testing of compression levels
-
-// Try to add newCdata in place of old
-// TODO: Likely will need to update this in place, but due to compression alteration
-// after writing this cdata, update the cdata compressed length value, and then
-// ensure the original buf data afterwards is put in the proper place (shift diff)
-function updateCdata (entry, newCdata) {
-  // console.log(entry)
-  for (let i = 0; i < entry.compressedLength; i++) {
-    buf[entry.cdata_begin_offset + i] = newCdata[i] // || 0
-    // console.log({
-    //   buf: buf[entry.cdata_begin_offset + i],
-    //   new: newCdata[i]
-    // })
-  }
-}
-
-updateCdata(bagInfo, newCdata)
-
-// Well, it produces a .sav the BG game can open, but NI will crash on.
-// Also, it unfortunately doesn't seem to have altered the order of bag contents at all...
-
-// Also, the size of deflate vs compressedLengths do not match up
-
-const fh = fs.openSync('hax.sav', 'w')
-fs.writeSync(fh, buf, 0, buf.length, 0)
-fs.closeSync(fh)
