@@ -24,9 +24,12 @@ const stringsOffset = dv.getUint32(14, 1)
 
 console.log({ sigV, strrefLen, myOffset: 26 * strrefLen, stringsOffset })
 
+// When this builds/populates strrefs array, we can use this
+// to pull out a ref (string content) of a strref by its id
 function read_item (buf, offset) {
   const dv = new DataView(buf.buffer)
   const bitField = dv.getUint16(0, 1)
+  // This is the resource reference for a sound file, NOT the key of something like THBAG05
   const resref = buf.slice(offset + 2, offset + 2 + 18)
   const stringStart = dv.getUint32(offset + 18, 1)
   const stringLen = dv.getUint32(offset + 22, 1)
@@ -76,4 +79,9 @@ for (let i = 0; i < strrefLen; i++) {
 
 // const name = buf.slice(305344, 305344 + 24)
 // const item = read_item(buf, 305344)
-console.log(strrefs[305344 + 1]) // string ref value - aka strref - how to lookit up
+
+// Turquoise Bag of Holding (.sto / thbag05.itm)
+// console.log(strrefs[305344 + 1]) // string ref value - aka strref - how to lookit up
+
+// Bag of Holding (.itm - thbag05.itm - general name)
+console.log(strrefs[56859 + 1]) // string ref value - aka strref - how to lookit up
